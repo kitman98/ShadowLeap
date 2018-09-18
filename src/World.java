@@ -9,7 +9,7 @@ public class World implements Bounded{
 
     private static String levelName;
 
-    private ArrayList<Tile> Tiles = new ArrayList<>(screenRight * screenBot/tileSize);
+	private TileList Tiles = new TileList();
 
 	public World(String levelName) throws IOException, SlickException {
 
@@ -32,6 +32,7 @@ public class World implements Bounded{
                 }
 
                 else if (details.isMovingObject()) {
+
 
                 }
             }
