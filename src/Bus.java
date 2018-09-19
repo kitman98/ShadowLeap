@@ -4,7 +4,7 @@ import org.newdawn.slick.SlickException;
 public class Bus extends MovableObject{
 
 
-    private static int speed = 15/100;
+    private static final int speed = 15/100;
 
     public Bus(String imageSrc, float x, float y, boolean direction) throws SlickException {
         super.setImageSrc(imageSrc);
@@ -27,8 +27,7 @@ public class Bus extends MovableObject{
 
     /* updater */
     public void update(Input input,int delta) {
-        Position current = super.getPosition();
-        current.setxPos(current.getxPos() + delta* this.getSpeed() *this.getDirection());
+        super.getPosition().setxPos(super.getPosition().getxPos() + delta* this.getSpeed() *this.getDirection());
     }
 
     /* getters */
