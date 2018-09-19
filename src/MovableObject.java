@@ -1,6 +1,5 @@
-import org.newdawn.slick.Input;
 
-public abstract class MoveableObject extends Sprite implements Moveable{
+public abstract class MovableObject extends Sprite implements Moveable{
 
 
     private int direction;
@@ -21,5 +20,6 @@ public abstract class MoveableObject extends Sprite implements Moveable{
         }
 
     }
+
 
 }

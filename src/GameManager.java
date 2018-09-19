@@ -12,6 +12,8 @@ public class GameManager {
 
     private static int current_level;
 
+    private static int lives;
+
     private static Player player;
 
     private static World world;
@@ -20,6 +22,7 @@ public class GameManager {
 
     public static void newGame() throws SlickException,IOException {
         current_level = 0;
+        lives = 0;
         levelName = LEVELS + current_level + LEVEL_SUFFIX;
         loadLevel(levelName);
     }

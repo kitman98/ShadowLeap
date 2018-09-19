@@ -1,7 +1,7 @@
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
-public class Bus extends MoveableObject implements Moveable{
+public class Bus extends MovableObject{
 
 
     private static int speed = 15/100;
