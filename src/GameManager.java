@@ -1,3 +1,5 @@
+import org.newdawn.slick.SlickException;
+
 import java.io.IOException;
 
 public class GameManager {
@@ -10,19 +12,22 @@ public class GameManager {
 
     private static int current_level;
 
+    private static int lives;
+
     private static Player player;
 
     private static World world;
 
     private static String levelName;
 
-    public static void newGame() throws IOException {
+    public static void newGame() throws SlickException,IOException {
         current_level = 0;
+        lives = 0;
         levelName = LEVELS + current_level + LEVEL_SUFFIX;
         loadLevel(levelName);
     }
 
-    public static void loadLevel(String levelName) throws IOException {
+    public static void loadLevel(String levelName) throws SlickException,IOException {
         world = new World(levelName);
     }
 }

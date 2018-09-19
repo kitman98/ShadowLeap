@@ -1,10 +1,10 @@
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
-public class Bus extends Sprite implements Moveable{
+public class Bus extends MovableObject{
 
-    private static int speed = 15/100;
-    private int direction;
+
+    private static final int speed = 15/100;
 
     public Bus(String imageSrc, float x, float y, boolean direction) throws SlickException {
         super.setImageSrc(imageSrc);
@@ -13,18 +13,21 @@ public class Bus extends Sprite implements Moveable{
         Position position = new Position((int) x, (int) y);
 
         super.setPosition(position);
+
+        setDirection(direction);
     }
 
     public Bus(String imageSrc, Position position, boolean direction) throws SlickException {
         super.setImageSrc(imageSrc);
         super.setImage(imageSrc);
         super.setPosition(position);
+
+        setDirection(direction);
     }
 
     /* updater */
     public void update(Input input,int delta) {
-        Position current = super.getPosition();
-        current.setxPos(current.getxPos() + delta* this.getSpeed() *this.getDirection());
+        super.getPosition().setxPos(super.getPosition().getxPos() + delta* this.getSpeed() *this.getDirection());
     }
 
     /* getters */
@@ -32,20 +35,7 @@ public class Bus extends Sprite implements Moveable{
         return this.speed;
     }
 
-    public int getDirection() {
-        return this.direction;
-    }
-
     /* setters */
-    public void setDirection(boolean direction) {
-        if (direction == true) {
-            this.direction = 1;
-        }
 
-        else {
-            this.direction = -1;
-        }
-
-    }
 
 }

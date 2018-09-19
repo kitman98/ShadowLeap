@@ -3,7 +3,7 @@ import org.newdawn.slick.SlickException;
 
 public class Player extends Sprite implements Moveable, Bounded {
 
-    private static int speed;
+    private static int speed = 1;
 
     /* constructors */
     public Player(String imageSrc, float x, float y) throws SlickException {
@@ -28,7 +28,7 @@ public class Player extends Sprite implements Moveable, Bounded {
 
         if (input.isKeyDown(Input.KEY_UP) || input.isKeyDown(Input.KEY_W)) {
 
-            current.setyPos(current.getyPos() - 1);
+            current.setyPos(current.getyPos() - speed*delta);
 
             super.setPosition(current);
 
@@ -36,7 +36,7 @@ public class Player extends Sprite implements Moveable, Bounded {
 
         if (input.isKeyDown(Input.KEY_DOWN) || input.isKeyDown(Input.KEY_S)) {
 
-            current.setyPos(current.getyPos() + 1);
+            current.setyPos(current.getyPos() + speed*delta);
 
             super.setPosition(current);
 
@@ -44,14 +44,14 @@ public class Player extends Sprite implements Moveable, Bounded {
 
         if (input.isKeyDown((Input.KEY_LEFT)) || input.isKeyDown(Input.KEY_A)) {
 
-            current.setxPos(current.getxPos() - 1 );
+            current.setxPos(current.getxPos() - speed*delta );
 
             super.setPosition(current);
         }
 
         if (input.isKeyDown(Input.KEY_RIGHT) || input.isKeyDown(Input.KEY_D)) {
 
-            current.setxPos(current.getxPos() + 1);
+            current.setxPos(current.getxPos() + speed*delta);
 
             super.setPosition(current);
         }
