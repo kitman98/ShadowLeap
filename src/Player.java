@@ -1,64 +1,44 @@
 import org.newdawn.slick.Input;
-import org.newdawn.slick.SlickException;
 
-public class Player extends Sprite implements Moveable, Bounded {
+public class Player extends Sprite {
+	private static final String ASSET_PATH = "assets/frog.png";
+	
+	public Player(float x, float y) {
+		super(ASSET_PATH, x, y);
+	}
 
-    private static int speed = 1;
-
-    /* constructors */
-    public Player(String imageSrc, float x, float y) throws SlickException {
-        super.setImageSrc(imageSrc);
-        super.setImage(imageSrc);
-
-        Position position = new Position((int) x, (int) y);
-
-        super.setPosition(position);
-    }
-
-    public Player(String imageSrc, Position position) throws SlickException {
-        super.setImageSrc(imageSrc);
-        super.setImage(imageSrc);
-        super.setPosition(position);
-    }
-
-    /* updates player position */
-    public void update(Input input, int delta) {
-
-        Position current = super.getPosition();
-
-        if (input.isKeyDown(Input.KEY_UP) || input.isKeyDown(Input.KEY_W)) {
-
-            current.setyPos(current.getyPos() - speed*delta);
-
-            super.setPosition(current);
-
-        }
-
-        if (input.isKeyDown(Input.KEY_DOWN) || input.isKeyDown(Input.KEY_S)) {
-
-            current.setyPos(current.getyPos() + speed*delta);
-
-            super.setPosition(current);
-
-        }
-
-        if (input.isKeyDown((Input.KEY_LEFT)) || input.isKeyDown(Input.KEY_A)) {
-
-            current.setxPos(current.getxPos() - speed*delta );
-
-            super.setPosition(current);
-        }
-
-        if (input.isKeyDown(Input.KEY_RIGHT) || input.isKeyDown(Input.KEY_D)) {
-
-            current.setxPos(current.getxPos() + speed*delta);
-
-            super.setPosition(current);
-        }
-    }
-
-    /* getter */
-    public int getSpeed() {
-        return speed;
-    }
+	@Override
+	public void update(Input input, int delta) {
+		int dx = 0,
+			dy = 0;
+		if (input.isKeyPressed(Input.KEY_LEFT)) {
+			dx -= World.TILE_SIZE;
+		}
+		if (input.isKeyPressed(Input.KEY_RIGHT)) {
+			dx += World.TILE_SIZE;
+		}
+		if (input.isKeyPressed(Input.KEY_DOWN)) {
+			dy += World.TILE_SIZE;
+		}
+		if (input.isKeyPressed(Input.KEY_UP)) {
+			dy -= World.TILE_SIZE;
+		}
+		
+		// make sure the frog stays on screen
+		if (getX() + dx - World.TILE_SIZE / 2 < 0 || getX() + dx + World.TILE_SIZE / 2 	> App.SCREEN_WIDTH) {
+			dx = 0;
+		}
+		if (getY() + dy - World.TILE_SIZE / 2 < 0 || getY() + dy + World.TILE_SIZE / 2 > App.SCREEN_HEIGHT) {
+			dy = 0;
+		}
+		
+		move(dx, dy);
+	}
+	
+	@Override
+	public void onCollision(Sprite other) {
+		if (other.hasTag(Sprite.HAZARD)) {
+			System.exit(0);
+		}
+	}
 }
