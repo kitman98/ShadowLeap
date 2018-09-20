@@ -35,7 +35,7 @@ public class World {
 		
 		// create vehicles
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_1_STEP)) {
-			sprites.add(new Bus(x + ENEMY_OFFSET_2, ENEMY_START, false));
+			sprites.add(new Bike(x + ENEMY_OFFSET_2, ENEMY_START, false));
 			sprites.add(new Bus(x + ENEMY_OFFSET_3, ENEMY_START + TILE_SIZE * 4, false));
 		}
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_2_STEP)) {
@@ -43,7 +43,7 @@ public class World {
 			sprites.add(new Bus(x + ENEMY_OFFSET_1, ENEMY_START + TILE_SIZE * 3, true));
 		}
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_3_STEP)) {
-			sprites.add(new Bus(x + ENEMY_OFFSET_4, ENEMY_START + TILE_SIZE * 2, false));
+			sprites.add(new Bulldozer(x + ENEMY_OFFSET_4, ENEMY_START + TILE_SIZE * 2, false));
 		}
 	}
 	
@@ -57,7 +57,7 @@ public class World {
 			for (Sprite sprite2: sprites) {
 				if (sprite1 != sprite2
 						&& sprite1.collides(sprite2)) {
-					sprite1.onCollision(sprite2);
+					sprite1.onCollision(sprite2, delta);
 				}
 			}
 		}

@@ -31,14 +31,18 @@ public class Player extends Sprite {
 		if (getY() + dy - World.TILE_SIZE / 2 < 0 || getY() + dy + World.TILE_SIZE / 2 > App.SCREEN_HEIGHT) {
 			dy = 0;
 		}
-		
+
 		move(dx, dy);
 	}
 	
 	@Override
-	public void onCollision(Sprite other) {
+	public void onCollision(Sprite other, int delta) {
 		if (other.hasTag(Sprite.HAZARD)) {
 			System.exit(0);
 		}
+
+		if (this instanceof Player && other.hasTag(Sprite.PUSHES) && other instanceof Bulldozer) {
+		    move(((Bulldozer) other).getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
+        }
 	}
 }

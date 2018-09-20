@@ -38,4 +38,5 @@ public class Vehicle extends Sprite {
 	public final void changeDirection() {
 	    this.moveRight = !getMoveRight();
     }
+
 }

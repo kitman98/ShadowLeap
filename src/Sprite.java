@@ -8,6 +8,7 @@ public abstract class Sprite {
 	// this is a defined constant to avoid typos
 	public final static String HAZARD = "hazard";
 	public final static String SOLID = "solid";
+	public final static String PUSHES = "pushes";
 	
 	private BoundingBox bounds;
 	private Image image;
@@ -36,7 +37,7 @@ public abstract class Sprite {
 		
 		bounds = new BoundingBox(image, (int)x, (int)y);
 		
-		tags = new String[0];		
+		tags = new String[0];
 	}
 
 	/**
@@ -80,7 +81,7 @@ public abstract class Sprite {
 	
 	public void update(Input input, int delta) { }
 	
-	public void onCollision(Sprite other) { }
+	public void onCollision(Sprite other, int delta) { }
 	
 	public void render() {
 		image.drawCentered(x, y);
