@@ -1,22 +1,20 @@
 import org.newdawn.slick.Input;
 
 public class Vehicle extends Sprite {
-	private static final String ASSET_PATH = "assets/bus.png";
-	private static final float SPEED = 0.15f;
-	
+
 	private boolean moveRight;
 	
-	private final float getInitialX() {
+	public final float getInitialX() {
 		return moveRight ? -World.TILE_SIZE / 2
 						 : App.SCREEN_WIDTH + World.TILE_SIZE / 2;
 	}
 	
-	public Vehicle(float x, float y, boolean moveRight) {
-		super(ASSET_PATH, x, y, new String[] { Sprite.HAZARD });
+	public Vehicle(String imageSrc, float x, float y, boolean moveRight, String[] tags) {
+		super(imageSrc, x, y, tags);
 		
 		this.moveRight = moveRight;
 	}
-	
+	/*
 	@Override
 	public void update(Input input, int delta) {
 		move(SPEED * delta * (moveRight ? 1 : -1), 0);
@@ -27,4 +25,17 @@ public class Vehicle extends Sprite {
 			setX(getInitialX());
 		}
 	}
+    */
+
+    public void render() {
+        getImage().getFlippedCopy(!moveRight, false).drawCentered(getX(), getY());
+    }
+
+	public boolean getMoveRight() {
+		return this.moveRight;
+	}
+
+	public final void changeDirection() {
+	    this.moveRight = !getMoveRight();
+    }
 }

@@ -6,7 +6,7 @@ package utilities; /**
 import org.newdawn.slick.Image;
 
 public class BoundingBox {
-	private static final float FUZZ = 0.95f;
+	private static final float FUZZ = 0.85f;
 	
 	private float left;
 	private float top;
@@ -36,10 +36,10 @@ public class BoundingBox {
 	 * Sets the x and y position at the centre of the bounding box.
 	 */
 	public void setX(float x) {
-		left = x - width / 2;
+		left = x;
 	}
 	public void setY(float y) {
-		top = y - height / 2;
+		top = y;
 	}
 	
 	public void setWidth(float w) {

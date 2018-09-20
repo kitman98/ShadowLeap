@@ -1,10 +1,13 @@
+import utilities.BoundingBox;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
+
 public abstract class Sprite {
 	// this is a defined constant to avoid typos
 	public final static String HAZARD = "hazard";
+	public final static String SOLID = "solid";
 	
 	private BoundingBox bounds;
 	private Image image;
@@ -91,4 +94,8 @@ public abstract class Sprite {
 		}
 		return false;
 	}
+
+	public Image getImage() {
+	    return image;
+    }
 }
