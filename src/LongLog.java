@@ -1,12 +1,12 @@
 import org.newdawn.slick.Input;
 
-public class Bulldozer extends Vehicle {
+public class LongLog extends Vehicle {
 
-    private static final String ASSET_PATH = "assets/bulldozer.png";
-    private static final float SPEED = 0.05f;
+    private final static String ASSET_PATH = "assets/longlog.png";
+    private final static float SPEED = 0.07f;
 
-    public Bulldozer(float x, float y, boolean moveRight) {
-        super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.PUSHES, Sprite.SOLID});
+    public LongLog(float x, float y, boolean moveRight) {
+        super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.DRAGS});
     }
 
     @Override
@@ -21,7 +21,5 @@ public class Bulldozer extends Vehicle {
     }
 
     @Override
-    public final float getSpeed() {
-        return SPEED;
-    }
+    public float getSpeed() {return SPEED;}
 }

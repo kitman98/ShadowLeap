@@ -29,23 +29,24 @@ public class World {
 				sprites.add(Tile.createWaterTile(x, y));
 			}
 		}
-		
-		// create player
-		sprites.add(new Player(App.SCREEN_WIDTH / 2, App.SCREEN_HEIGHT - TILE_SIZE));
-		
+
 		// create vehicles
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_1_STEP)) {
 			sprites.add(new Bike(x + ENEMY_OFFSET_2, ENEMY_START, false));
 			sprites.add(new Bus(x + ENEMY_OFFSET_3, ENEMY_START + TILE_SIZE * 4, false));
 		}
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_2_STEP)) {
-			sprites.add(new Bus(x, ENEMY_START + TILE_SIZE, true));
+			sprites.add(new LongLog(x, ENEMY_START + TILE_SIZE, true));
 			sprites.add(new Bus(x + ENEMY_OFFSET_1, ENEMY_START + TILE_SIZE * 3, true));
 		}
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_3_STEP)) {
 			sprites.add(new Bulldozer(x + ENEMY_OFFSET_4, ENEMY_START + TILE_SIZE * 2, false));
 		}
-	}
+
+        // create player
+        sprites.add(new Player(App.SCREEN_WIDTH / 2, App.SCREEN_HEIGHT - TILE_SIZE));
+
+    }
 	
 	public void update(Input input, int delta) {
 		for (Sprite sprite : sprites) {
@@ -59,6 +60,7 @@ public class World {
 						&& sprite1.collides(sprite2)) {
 					sprite1.onCollision(sprite2, delta);
 				}
+
 			}
 		}
 	}

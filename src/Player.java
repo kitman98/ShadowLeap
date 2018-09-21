@@ -41,8 +41,20 @@ public class Player extends Sprite {
 			System.exit(0);
 		}
 
-		if (this instanceof Player && other.hasTag(Sprite.PUSHES) && other instanceof Bulldozer) {
-		    move(((Bulldozer) other).getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
+		if (this instanceof Player && other.hasTag(Sprite.DRAGS) && (other instanceof LongLog)) {
+		    move(other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
         }
+
+		if (this instanceof Player && other.hasTag(Sprite.DRAGS) && (other instanceof Log)) {
+			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
+		}
+
+	}
+
+	@Override
+	public void push(Sprite other, int delta) {
+		if (other.hasTag(Sprite.PUSHES) && other instanceof Bulldozer) {
+			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
+		}
 	}
 }

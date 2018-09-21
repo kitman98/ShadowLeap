@@ -9,6 +9,7 @@ public abstract class Sprite {
 	public final static String HAZARD = "hazard";
 	public final static String SOLID = "solid";
 	public final static String PUSHES = "pushes";
+	public final static String DRAGS = "drags";
 	
 	private BoundingBox bounds;
 	private Image image;
@@ -78,10 +79,18 @@ public abstract class Sprite {
 	public final boolean collides(Sprite other) {
 		return bounds.intersects(other.bounds);
 	}
+
+	public final boolean nextTo(Sprite other) {
+		return bounds.nextTo(other.bounds);
+	}
 	
 	public void update(Input input, int delta) { }
 	
 	public void onCollision(Sprite other, int delta) { }
+
+	public void push(Sprite other, int delta) { }
+
+	public float getSpeed() {return 0f;}
 	
 	public void render() {
 		image.drawCentered(x, y);
