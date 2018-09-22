@@ -1,5 +1,7 @@
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
 
 import java.util.ArrayList;
 
@@ -17,6 +19,9 @@ public class World {
 	private static final int ENEMY_OFFSET_2 = 48;
 	private static final int ENEMY_OFFSET_3 = 250;
 	private static final int ENEMY_OFFSET_4 = 64;
+
+	private static int PLAYER_LIVES = 3;
+	private static String LIVE_SRC = "assets/lives.png";
 	
 	private ArrayList<Sprite> sprites = new ArrayList<>();
 	
@@ -37,7 +42,7 @@ public class World {
 		}
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_2_STEP)) {
 			sprites.add(new LongLog(x, ENEMY_START + TILE_SIZE, true));
-			sprites.add(new Bus(x + ENEMY_OFFSET_1, ENEMY_START + TILE_SIZE * 3, true));
+			sprites.add(new Turtle(x + ENEMY_OFFSET_1, ENEMY_START + TILE_SIZE * 3, true));
 		}
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_3_STEP)) {
 			sprites.add(new Bulldozer(x + ENEMY_OFFSET_4, ENEMY_START + TILE_SIZE * 2, false));
@@ -65,9 +70,33 @@ public class World {
 		}
 	}
 	
-	public void render(Graphics g) {
+	public void render(Graphics g) throws SlickException {
 		for (Sprite sprite : sprites) {
 			sprite.render();
 		}
+
+		Image lives = new Image(LIVE_SRC);
+
+		for (int i = 0; i < PLAYER_LIVES; i++) {
+		    lives.drawCentered(24 + i*32, 744);
+
+        }
 	}
+
+	public static void increaseLives() {
+	    PLAYER_LIVES++;
+    }
+
+    public static void reduceLives() {
+	    PLAYER_LIVES--;
+
+	    checkLives();
+    }
+
+    public static void checkLives() {
+	    if (PLAYER_LIVES < 0) {
+	        System.exit(0);
+        }
+    }
+
 }

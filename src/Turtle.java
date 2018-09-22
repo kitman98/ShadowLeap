@@ -1,17 +1,15 @@
 import org.newdawn.slick.Input;
 
-public class Bulldozer extends Vehicle {
+public class Turtle extends Vehicle {
 
-    private static final String ASSET_PATH = "assets/bulldozer.png";
-    private static final float SPEED = 0.05f;
+    private static final String ASSET_PATH = "assets/turtles.png";
+    private static final float SPEED = 0.085f;
+    private static boolean SUBMERGED = false;
 
-
-
-    public Bulldozer(float x, float y, boolean moveRight) {
-        super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.PUSHES, Sprite.SOLID});
+    public Turtle(float x, float y, boolean moveRight) {
+        super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.DRAGS, Sprite.SUBMERGES});
     }
 
-    @Override
     public void update(Input input, int delta) {
         move(SPEED * delta * (getMoveRight() ? 1 : -1), 0);
 
@@ -22,7 +20,14 @@ public class Bulldozer extends Vehicle {
         }
     }
 
-    @Override
+    public final void changeState() {
+        SUBMERGED = !SUBMERGED;
+    }
+
+    public final boolean getState() {
+        return this.SUBMERGED;
+    }
+
     public final float getSpeed() {
         return SPEED;
     }

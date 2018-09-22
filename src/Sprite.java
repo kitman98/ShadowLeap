@@ -10,6 +10,8 @@ public abstract class Sprite {
 	public final static String SOLID = "solid";
 	public final static String PUSHES = "pushes";
 	public final static String DRAGS = "drags";
+	public final static String SUBMERGES = "submerges";
+	public final static String PICKUP = "pickup";
 	
 	private BoundingBox bounds;
 	private Image image;

@@ -38,16 +38,18 @@ public class Player extends Sprite {
 	@Override
 	public void onCollision(Sprite other, int delta) {
 		if (other.hasTag(Sprite.HAZARD)) {
-			System.exit(0);
+			World.reduceLives();
+			resetPlayer();
 		}
 
 		if (this instanceof Player && other.hasTag(Sprite.DRAGS) && (other instanceof LongLog)) {
 		    move(other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
         }
 
-		if (this instanceof Player && other.hasTag(Sprite.DRAGS) && (other instanceof Log)) {
+		if (this instanceof Player && other.hasTag(Sprite.DRAGS)) {
 			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
 		}
+
 
 	}
 
@@ -57,4 +59,9 @@ public class Player extends Sprite {
 			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
 		}
 	}
+
+	public void resetPlayer() {
+	    setX(App.SCREEN_WIDTH / 2);
+	    setY( App.SCREEN_HEIGHT - World.TILE_SIZE);
+    }
 }
