@@ -1,6 +1,6 @@
 import org.newdawn.slick.Input;
 
-public class Vehicle extends Sprite {
+public abstract class Vehicle extends Sprite {
 
 	private boolean moveRight;
 	
