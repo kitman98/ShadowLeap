@@ -27,6 +27,7 @@ public abstract class Sprite {
 		setupSprite(imageSrc, x, y);
 		this.tags = tags;
 	}
+
 	
 	private void setupSprite(String imageSrc, float x, float y) {
 		try {
@@ -81,6 +82,8 @@ public abstract class Sprite {
 	public final boolean collides(Sprite other) {
 		return bounds.intersects(other.bounds);
 	}
+
+	public final boolean collides(Hole hole) { return bounds.intersects(hole.getBoundingBox());}
 
 	public final boolean nextTo(Sprite other) {
 		return bounds.nextTo(other.bounds);

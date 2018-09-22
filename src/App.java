@@ -15,7 +15,7 @@ public class App extends BasicGame {
     /** screen height, in pixels */
     public static final int SCREEN_HEIGHT = 768;
 
-    private World world;
+    private GameManager gameManager;
 
     public App() {
         super("Shadow Leap");
@@ -24,7 +24,8 @@ public class App extends BasicGame {
     @Override
     public void init(GameContainer gc)
             throws SlickException {
-        world = new World();
+        gameManager = new GameManager();
+        gameManager.newGame();
     }
 
     /** Update the game state for a frame.
@@ -36,7 +37,7 @@ public class App extends BasicGame {
             throws SlickException {
         // Get data about the current input (keyboard state).
         Input input = gc.getInput();
-        world.update(input, delta);
+        gameManager.update(input, delta);
     }
 
     /** Render the entire screen, so it reflects the current game state.
@@ -45,7 +46,7 @@ public class App extends BasicGame {
      */
     public void render(GameContainer gc, Graphics g)
             throws SlickException {
-        world.render(g);
+        gameManager.render(g);
     }
 
     /** Start-up method. Creates the game and runs it.
