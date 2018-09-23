@@ -46,9 +46,11 @@ public class Player extends Sprite {
 		    move(other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
         }
 
-		if (this instanceof Player && other.hasTag(Sprite.DRAGS)) {
+		if (this instanceof Player && other.hasTag(Sprite.DRAGS) && (other instanceof Log)) {
 			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
 		}
+
+		if (this instanceof)
 
 
 	}
