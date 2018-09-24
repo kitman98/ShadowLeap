@@ -42,7 +42,7 @@ public class World {
 		}
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_2_STEP)) {
 			sprites.add(new LongLog(x, ENEMY_START + TILE_SIZE, true));
-			sprites.add(new Turtle(x + ENEMY_OFFSET_1, ENEMY_START + TILE_SIZE * 3, true));
+			sprites.add(new Log(x + ENEMY_OFFSET_1, ENEMY_START + TILE_SIZE * 3, true));
 		}
 		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_3_STEP)) {
 			sprites.add(new Bulldozer(x + ENEMY_OFFSET_4, ENEMY_START + TILE_SIZE * 2, false));
