@@ -57,6 +57,12 @@ public class World {
 					sprite1.onCollision(sprite2, delta);
 				}
 
+				if (sprite1 != sprite2 && sprite1 instanceof Player) {
+				    if (((Player)sprite1).nextTo(sprite2)) {
+				        sprite1.push(sprite2, delta);
+                    }
+                }
+
 			}
 
 		}

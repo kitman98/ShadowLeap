@@ -20,7 +20,7 @@ public class GameManager {
     }
 
     public void newGame() {
-        currentLevel = 1;
+        currentLevel = 0;
 
         try {
             world = new World(levelDirectory + currentLevel + levelSuffix);

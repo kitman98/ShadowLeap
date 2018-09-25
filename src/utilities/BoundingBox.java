@@ -75,8 +75,4 @@ public class BoundingBox {
 			  || other.top > getBottom()
 			  || other.getBottom() < top);
 	}
-
-	public boolean nextTo(BoundingBox other) {
-		return getLeft() < other.getRight();
-	}
 }

@@ -88,10 +88,6 @@ public abstract class Sprite {
 	public final boolean collides(Sprite other) {
 		return bounds.intersects(other.bounds);
 	}
-
-	public final boolean nextTo(Sprite other) {
-		return bounds.nextTo(other.bounds);
-	}
 	
 	public void update(Input input, int delta) { }
 	

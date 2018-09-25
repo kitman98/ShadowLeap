@@ -2,8 +2,6 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Player extends Sprite {
 	private static final String ASSET_PATH = "assets/frog.png";
@@ -75,6 +73,8 @@ public class Player extends Sprite {
 		    echo = NULL;
 		    nextReset = World.clock + delay;
         }
+
+
 	}
 
 	@Override
@@ -151,12 +151,15 @@ public class Player extends Sprite {
         }
 	}
 
-
     @Override
 	public void push(Sprite other, int delta) {
 		if (other.hasTag(Sprite.PUSHES) && other instanceof Bulldozer) {
 			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
 		}
+
+        if (getX() + getImage().getWidth() < 0 || getX() > App.SCREEN_WIDTH || getY() > App.SCREEN_HEIGHT) {
+            System.exit(0);
+        }
 	}
 
 	public void resetPlayer() {
@@ -210,6 +213,10 @@ public class Player extends Sprite {
         // to ensure that player does not die when hitting a wall
         safeState = true;
 
+    }
+
+    public boolean nextTo(Sprite other) {
+        return collides(other);
     }
 
 
