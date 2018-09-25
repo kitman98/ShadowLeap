@@ -5,6 +5,8 @@
 
 import org.newdawn.slick.*;
 
+import java.io.IOException;
+
 /**
  * Main class for the game.
  * Handles initialisation, input and rendering.
@@ -22,8 +24,7 @@ public class App extends BasicGame {
     }
 
     @Override
-    public void init(GameContainer gc)
-            throws SlickException {
+    public void init(GameContainer gc) {
         gameManager = new GameManager();
         gameManager.newGame();
     }

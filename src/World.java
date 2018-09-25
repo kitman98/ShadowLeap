@@ -3,54 +3,36 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class World {
 	public static final int TILE_SIZE = 48;
-	private static final int GRASS_Y_1 =  672;
-	private static final int GRASS_Y_2 =  384;
-	private static final int WATER_START = 336;
-	private static final int WATER_END = 48;
-	private static final int ENEMY_START = 432;
-	private static final float ENEMY_1_STEP = 6.5f;
-	private static final float ENEMY_2_STEP = 5f;
-	private static final float ENEMY_3_STEP = 12f;
-	private static final int ENEMY_OFFSET_1 = 128;
-	private static final int ENEMY_OFFSET_2 = 48;
-	private static final int ENEMY_OFFSET_3 = 250;
-	private static final int ENEMY_OFFSET_4 = 64;
 
-	private ArrayList<Sprite> sprites = new ArrayList<>();
+	private ArrayList<Sprite> sprites;
+
+	// internal game clock
+    public static long clock = System.currentTimeMillis();
 	
-	public World() {
+	public World(String currentLevel) throws IOException {
 		// create tiles
-		for (int x = 0; x < App.SCREEN_WIDTH; x += TILE_SIZE) {
-			sprites.add(Tile.createGrassTile(x, GRASS_Y_1));
-			sprites.add(Tile.createGrassTile(x, GRASS_Y_2));
-			for (int y = WATER_START; y > WATER_END; y -= TILE_SIZE) {
-				sprites.add(Tile.createWaterTile(x, y));
-			}
-		}
+		sprites = WorldReader.readLevel(currentLevel);
 
-		// create vehicles
-		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_1_STEP)) {
-			sprites.add(new Bike(x + ENEMY_OFFSET_2, ENEMY_START, false));
-			sprites.add(new Bus(x + ENEMY_OFFSET_3, ENEMY_START + TILE_SIZE * 4, false));
-		}
-		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_2_STEP)) {
-			sprites.add(new LongLog(x, ENEMY_START + TILE_SIZE, true));
-			sprites.add(new Log(x + ENEMY_OFFSET_1, ENEMY_START + TILE_SIZE * 3, true));
-		}
-		for (int x = 0; x < App.SCREEN_WIDTH - TILE_SIZE; x += (int)(TILE_SIZE * ENEMY_3_STEP)) {
-			sprites.add(new Bulldozer(x + ENEMY_OFFSET_4, ENEMY_START + TILE_SIZE * 2, false));
-		}
+        // create player at the front of list so when list is reversed sprite is at the last position so the player is rendered last
+        sprites.add(0,new Player(App.SCREEN_WIDTH / 2, App.SCREEN_HEIGHT - TILE_SIZE));
 
-        // create player
-        sprites.add(new Player(App.SCREEN_WIDTH / 2, App.SCREEN_HEIGHT - TILE_SIZE));
+        // reverses sprite list
+        Collections.reverse(sprites);
+
+        // create holes
 
     }
 	
 	public void update(Input input, int delta) {
+
+	    clock = System.currentTimeMillis();
+
 		for (Sprite sprite : sprites) {
 			sprite.update(input, delta);
 		}
@@ -68,9 +50,20 @@ public class World {
 	}
 	
 	public void render(Graphics g) throws SlickException {
+
+	    // render tiles first
 		for (Sprite sprite : sprites) {
-			sprite.render();
+			if (sprite instanceof Tile) {
+			    sprite.render();
+            }
 		}
+
+		// then render sprites
+		for (Sprite sprite: sprites) {
+		    if (!(sprite instanceof Tile)) {
+		        sprite.render();
+            }
+        }
 
 	}
 

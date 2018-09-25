@@ -37,8 +37,6 @@ public class Hole{
         if (playerIn) {
             PLAYER.draw(x + 24, y);
         }
-
-
     }
 
     public BoundingBox getBoundingBox() {

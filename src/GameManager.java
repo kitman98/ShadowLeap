@@ -4,12 +4,10 @@ import org.newdawn.slick.SlickException;
 
 public class GameManager {
 
-    private final static String levelDirectory = "assets/levels";
+    private final static String levelDirectory = "assets/levels/";
     private final static String levelSuffix = ".lvl";
 
     private static int currentLevel;
-
-    private static String[][] levelDetails = new String[4][];
 
     private static World world;
 
@@ -19,8 +17,12 @@ public class GameManager {
 
     public void newGame() {
         currentLevel = 0;
-        world = new World();
 
+        try {
+            world = new World(levelDirectory + currentLevel + levelSuffix);
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void nextLevel() {
