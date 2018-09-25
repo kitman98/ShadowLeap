@@ -92,7 +92,7 @@ public class Player extends Sprite {
 	@Override
 	public void onCollision(Sprite other, int delta) {
 
-        if (other.hasTag(Sprite.DRAGS)) {
+        if (other.hasTag(Sprite.DRAGS) && !(other instanceof Turtle)) {
 
             safeState = true;
 
@@ -103,6 +103,28 @@ public class Player extends Sprite {
             }
 
             move(dx, 0);
+        }
+
+        if (other.hasTag(Sprite.DRAGS) && other instanceof Turtle) {
+
+            if (((Turtle) other).getState()) {
+                // do nothing
+            }
+
+            else {
+
+                safeState = true;
+
+                float dx = other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta;
+
+                if (getX() + dx - World.TILE_SIZE / 2 < 0 || getX() + dx + World.TILE_SIZE / 2 	> App.SCREEN_WIDTH) {
+                    dx = 0;
+                }
+
+                move(dx, 0);
+
+            }
+
         }
 
 		if (other.hasTag(Sprite.HAZARD) && !safeState) {

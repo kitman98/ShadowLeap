@@ -6,11 +6,29 @@ public class Turtle extends Vehicle {
     private static final float SPEED = 0.085f;
     private static boolean SUBMERGED = false;
 
+    // time submerged and time not submerged in ms
+    private static final long TIME_SUBMERGED = 7000;
+    private static final long TIME_NOT_SUBMERGED = 2000;
+
+    // internal clock for all turtles
+    private static long SUBMERGED_CLOCK = World.clock + TIME_SUBMERGED;
+    private static long OUTOFWATER_CLOCK = SUBMERGED_CLOCK + TIME_NOT_SUBMERGED;
+
     public Turtle(float x, float y, boolean moveRight) {
         super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.DRAGS, Sprite.SUBMERGES});
     }
 
     public void update(Input input, int delta) {
+        if (World.clock == SUBMERGED_CLOCK) {
+            changeState();
+        }
+
+        if (World.clock == OUTOFWATER_CLOCK) {
+            changeState();
+            SUBMERGED_CLOCK = World.clock + TIME_SUBMERGED;
+            OUTOFWATER_CLOCK = SUBMERGED_CLOCK + TIME_NOT_SUBMERGED;
+        }
+
         move(SPEED * delta * (getMoveRight() ? 1 : -1), 0);
 
         // check if the vehicle has moved off the screen
