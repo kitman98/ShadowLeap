@@ -158,7 +158,8 @@ public class Player extends Sprite {
 		}
 
         if (getX() + getImage().getWidth() < 0 || getX() > App.SCREEN_WIDTH || getY() > App.SCREEN_HEIGHT) {
-            System.exit(0);
+            reduceLives();
+            resetPlayer();
         }
 	}
 
@@ -218,7 +219,4 @@ public class Player extends Sprite {
     public boolean nextTo(Sprite other) {
         return collides(other);
     }
-
-
-
 }
