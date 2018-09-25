@@ -97,7 +97,7 @@ public abstract class Sprite {
 
 	public float getSpeed() {return 0f;}
 	
-	public void render() {
+	public void render() throws SlickException {
 		image.drawCentered(x, y);
 	}
 	

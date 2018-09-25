@@ -39,7 +39,7 @@ public class ExtraLife extends Sprite {
 
     public void onCollision(Sprite other, int delta) {
         if (other instanceof Player) {
-            World.increaseLives();
+            Player.increaseLives();
         }
 
     }

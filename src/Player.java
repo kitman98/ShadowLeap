@@ -1,9 +1,14 @@
+import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
 
 public class Player extends Sprite {
 	private static final String ASSET_PATH = "assets/frog.png";
-	
-	public Player(float x, float y) {
+    private static int PLAYER_LIVES = 3;
+    private static String LIVE_SRC = "assets/lives.png";
+
+
+    public Player(float x, float y) {
 		super(ASSET_PATH, x, y);
 	}
 
@@ -34,11 +39,23 @@ public class Player extends Sprite {
 
 		move(dx, dy);
 	}
-	
+
+	@Override
+    public void render() throws SlickException {
+        super.render();
+
+        Image lives = new Image(LIVE_SRC);
+
+        for (int i = 0; i < PLAYER_LIVES; i++) {
+            lives.drawCentered(24 + i*32, 744);
+
+        }
+    }
+
 	@Override
 	public void onCollision(Sprite other, int delta) {
 		if (other.hasTag(Sprite.HAZARD)) {
-			World.reduceLives();
+			reduceLives();
 			resetPlayer();
 		}
 
@@ -64,5 +81,21 @@ public class Player extends Sprite {
 	public void resetPlayer() {
 	    setX(App.SCREEN_WIDTH / 2);
 	    setY( App.SCREEN_HEIGHT - World.TILE_SIZE);
+    }
+
+    public static void increaseLives() {
+        PLAYER_LIVES++;
+    }
+
+    public static void reduceLives() {
+        PLAYER_LIVES--;
+
+        checkLives();
+    }
+
+    public static void checkLives() {
+        if (PLAYER_LIVES < 0) {
+            System.exit(0);
+        }
     }
 }

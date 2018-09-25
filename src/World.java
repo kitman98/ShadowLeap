@@ -20,9 +20,6 @@ public class World {
 	private static final int ENEMY_OFFSET_3 = 250;
 	private static final int ENEMY_OFFSET_4 = 64;
 
-	private static int PLAYER_LIVES = 3;
-	private static String LIVE_SRC = "assets/lives.png";
-	
 	private ArrayList<Sprite> sprites = new ArrayList<>();
 	
 	public World() {
@@ -75,28 +72,6 @@ public class World {
 			sprite.render();
 		}
 
-		Image lives = new Image(LIVE_SRC);
-
-		for (int i = 0; i < PLAYER_LIVES; i++) {
-		    lives.drawCentered(24 + i*32, 744);
-
-        }
 	}
-
-	public static void increaseLives() {
-	    PLAYER_LIVES++;
-    }
-
-    public static void reduceLives() {
-	    PLAYER_LIVES--;
-
-	    checkLives();
-    }
-
-    public static void checkLives() {
-	    if (PLAYER_LIVES < 0) {
-	        System.exit(0);
-        }
-    }
 
 }
