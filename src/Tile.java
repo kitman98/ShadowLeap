@@ -14,10 +14,10 @@ public class Tile extends Sprite {
 		return new Tile(TREE_PATH, x, y, new String[] {Sprite.SOLID});
 	}
 	
-	private Tile(String imageSrc, float x, float y) {		
+	public Tile(String imageSrc, float x, float y) {
 		super(imageSrc, x, y);
 	}
-	private Tile(String imageSrc, float x, float y, String[] tags) {		
+	public Tile(String imageSrc, float x, float y, String[] tags) {
 		super(imageSrc, x, y, tags);
 	}
 }

@@ -6,7 +6,7 @@ package utilities; /**
 import org.newdawn.slick.Image;
 
 public class BoundingBox {
-	private static final float FUZZ = 0.85f;
+	private static final float FUZZ = 0.90f;
 	
 	private float left;
 	private float top;

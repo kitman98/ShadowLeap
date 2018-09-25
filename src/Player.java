@@ -2,6 +2,9 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class Player extends Sprite {
 	private static final String ASSET_PATH = "assets/frog.png";
 
@@ -26,7 +29,7 @@ public class Player extends Sprite {
     private static final String NULL = "null";
 
     // timer for delay when echo is set to null
-    private static final long delay = 10;
+    private static final long delay = 100;
     private static long nextReset = World.clock + delay;
 
     public Player(float x, float y) {
@@ -111,10 +114,23 @@ public class Player extends Sprite {
             solidHit(other);
         }
 
+        if (other.hasTag(Sprite.HOLE)) {
+            if (((Hole)other).isPlayerIn()) {
+                reduceLives();
+            }
 
+            else {
+                ((Hole) other).playerReaches();
+                World.reachedHole();
+            }
+
+            resetPlayer();
+
+        }
 	}
 
-	@Override
+
+    @Override
 	public void push(Sprite other, int delta) {
 		if (other.hasTag(Sprite.PUSHES) && other instanceof Bulldozer) {
 			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
@@ -136,8 +152,12 @@ public class Player extends Sprite {
         checkLives();
     }
 
+    public static int livesLeft() {
+        return PLAYER_LIVES;
+    }
+
     public static void checkLives() {
-        if (PLAYER_LIVES < 0) {
+        if (livesLeft() < 1) {
             System.exit(0);
         }
     }
@@ -169,5 +189,7 @@ public class Player extends Sprite {
         safeState = true;
 
     }
+
+
 
 }

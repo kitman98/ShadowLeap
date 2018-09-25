@@ -3,6 +3,8 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
+import java.util.ArrayList;
+
 
 public abstract class Sprite {
 	// this is a defined constant to avoid typos
@@ -12,6 +14,7 @@ public abstract class Sprite {
 	public final static String DRAGS = "drags";
 	public final static String SUBMERGES = "submerges";
 	public final static String PICKUP = "pickup";
+	public final static String HOLE = "hole";
 	
 	private BoundingBox bounds;
 	private Image image;
@@ -64,6 +67,9 @@ public abstract class Sprite {
 	 * @return	the y position of the sprite
 	 */
 	public final float getY() { return y; }
+
+	// adds tags to a tagless class
+	public final void addTag(String[] tags) {this.tags = tags; }
 	
 	public final void move(float dx, float dy) {
 		setX(x + dx);
@@ -82,8 +88,6 @@ public abstract class Sprite {
 	public final boolean collides(Sprite other) {
 		return bounds.intersects(other.bounds);
 	}
-
-	public final boolean collides(Hole hole) { return bounds.intersects(hole.getBoundingBox());}
 
 	public final boolean nextTo(Sprite other) {
 		return bounds.nextTo(other.bounds);

@@ -1,5 +1,4 @@
 import org.newdawn.slick.Graphics;
-import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
@@ -8,9 +7,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class World {
+
 	public static final int TILE_SIZE = 48;
 
+    private static final float[] holeX =
+            new float[] {96, 288, 480 , 672, 864};
+    private static final float holeY = 48;
+
 	private ArrayList<Sprite> sprites;
+
+	private static int holesReached = 0;
 
 	// internal game clock
     public static long clock = System.currentTimeMillis();
@@ -26,12 +32,17 @@ public class World {
         Collections.reverse(sprites);
 
         // create holes
+        for (float x: holeX) {
+            sprites.add(new Hole(x, holeY));
+        }
 
     }
 	
 	public void update(Input input, int delta) {
 
+	    int n;
 	    clock = System.currentTimeMillis();
+
 
 		for (Sprite sprite : sprites) {
 			sprite.update(input, delta);
@@ -39,6 +50,7 @@ public class World {
 		
 		// loop over all pairs of sprites and test for intersection
 		for (Sprite sprite1: sprites) {
+
 			for (Sprite sprite2: sprites) {
 				if (sprite1 != sprite2
 						&& sprite1.collides(sprite2)) {
@@ -46,6 +58,7 @@ public class World {
 				}
 
 			}
+
 		}
 	}
 	
@@ -67,4 +80,19 @@ public class World {
 
 	}
 
+	public static void reachedHole() {
+	    holesReached++;
+    }
+
+    public static int getHolesReached() {
+	    return holesReached;
+    }
+
+    public static void resetWorld() {
+	    holesReached = 0;
+
+	    while(Player.livesLeft() < 3) {
+	        Player.increaseLives();
+        }
+    }
 }
