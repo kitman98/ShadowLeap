@@ -11,7 +11,7 @@ public class ExtraLife extends Sprite {
     private static final float SPEED = 48f;
 
     private static final long MOVE_DELAY = 2000;
-    public static final long DESPAWN_DELAY = 14000;
+    public static final long DESPAWN_DELAY = 14000 * 3;
 
     private static long MOVE_CLOCK = World.clock + MOVE_DELAY;
     private static long DESPAWN_CLOCK = World.clock + DESPAWN_DELAY;
@@ -43,7 +43,7 @@ public class ExtraLife extends Sprite {
 
     private final void checkNextMove() {
         if (getX() + SPEED*(getMoveRight()? 1: -1) > log.getX() + log.getImage().getWidth()/2||
-                getX() + getImage().getWidth() + SPEED*(getMoveRight()? 1: -1) < log.getX()) {
+                getX() + getImage().getWidth() + SPEED*(getMoveRight()? 1: -1) < log.getX() - log.getImage().getWidth()/4) {
             changeDirection();
         }
     }
