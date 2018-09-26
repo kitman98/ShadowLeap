@@ -1,31 +1,25 @@
 import org.newdawn.slick.Input;
 
-public class LongLog extends RideableObject {
+public class LongLog extends Vehicle {
 
-    private final static boolean rideable = true;
+    private final static String ASSET_PATH = "assets/longlog.png";
+    private final static float SPEED = 0.07f;
 
-    public LongLog() {
-
+    public LongLog(float x, float y, boolean moveRight) {
+        super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.DRAGS});
     }
 
-    /* inherited methods and methods from interfaces */
+    @Override
     public void update(Input input, int delta) {
+        move(SPEED * delta * (getMoveRight() ? 1 : -1), 0);
 
-    }
-
-    public void push(Player player) {
-
-    }
-
-    public void render() {
-        if  (this.isRideable()) {
-            super.getImage().draw(super.getPosition().getxPos(), super.getPosition().getyPos());
+        // check if the vehicle has moved off the screen
+        if (getX() > App.SCREEN_WIDTH + getImage().getWidth() || getX() < -getImage().getWidth()
+                || getY() > App.SCREEN_HEIGHT + World.TILE_SIZE / 2 || getY() < -World.TILE_SIZE / 2) {
+            setX(getInitialX());
         }
     }
 
-    /* getters */
-
-    public boolean isRideable() {
-        return this.rideable;
-    }
+    @Override
+    public float getSpeed() {return SPEED;}
 }

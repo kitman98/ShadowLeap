@@ -1,41 +1,26 @@
 import org.newdawn.slick.Input;
-import org.newdawn.slick.SlickException;
 
-public class Bus extends MovableObject{
+public class Bus extends Vehicle {
 
+    private static final String ASSET_PATH = "assets/bus.png";
+    private static final float SPEED = 0.15f;
 
-    private static final int speed = 15/100;
-
-    public Bus(String imageSrc, float x, float y, boolean direction) throws SlickException {
-        super.setImageSrc(imageSrc);
-        super.setImage(imageSrc);
-
-        Position position = new Position((int) x, (int) y);
-
-        super.setPosition(position);
-
-        setDirection(direction);
+    public Bus(float x, float y, boolean moveRight) {
+        super( ASSET_PATH,x, y, moveRight, new String[] {Sprite.HAZARD});
     }
 
-    public Bus(String imageSrc, Position position, boolean direction) throws SlickException {
-        super.setImageSrc(imageSrc);
-        super.setImage(imageSrc);
-        super.setPosition(position);
 
-        setDirection(direction);
+    @Override
+    public void update(Input input, int delta) {
+        move(SPEED * delta * (getMoveRight() ? 1 : -1), 0);
+
+        // check if the vehicle has moved off the screen
+        if (getX() > App.SCREEN_WIDTH + getImage().getWidth()|| getX() < -getImage().getWidth()
+                || getY() > App.SCREEN_HEIGHT + World.TILE_SIZE / 2 || getY() < -World.TILE_SIZE / 2) {
+            setX(getInitialX());
+        }
     }
 
-    /* updater */
-    public void update(Input input,int delta) {
-        super.getPosition().setxPos(super.getPosition().getxPos() + delta* this.getSpeed() *this.getDirection());
-    }
-
-    /* getters */
-    public int getSpeed() {
-        return this.speed;
-    }
-
-    /* setters */
 
 
 }

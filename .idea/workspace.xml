@@ -3,10 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="f09e61ab-f1d6-4686-8663-355c4c37970c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bulldozer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bulldozer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project2/ExtraLife.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project2/ExtraLife.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project2/GameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project2/GameManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project2/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project2/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project2/Sprite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project2/Sprite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project2/Turtle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project2/Turtle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project2/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project2/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project2/WorldReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project2/WorldReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtraLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtraLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Racecar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racecar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Turtle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Turtle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WorldReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WorldReader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,183 +36,55 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="JAVA/" value="1" />
-          <entry key="java" value="4" />
+          <entry key="JAVA/" value="2" />
+          <entry key="java" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
-          <entry key="UML" value="1" />
+          <entry key="JAVA" value="16" />
+          <entry key="UML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1645" />
+          <entry key="java" value="3514" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1645" />
+          <entry key="JAVA" value="3514" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JAVA/" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="305.0" y="1205.0">com</node>
-                <node x="248.0" y="761.0">App</node>
-                <node x="96.7734375" y="297.0">Pushes</node>
-                <node x="188.0" y="1129.0">netscape</node>
-                <node x="0.0" y="761.0">TileList</node>
-                <node x="0.0" y="436.0">Bulldozer</node>
-                <node x="0.0" y="1005.0">GameManager</node>
-                <node x="482.3984375" y="577.0">LongLog</node>
-                <node x="492.0" y="1005.0">toolbarButtonGraphics</node>
-                <node x="363.0" y="1129.0">utilities</node>
-                <node x="967.7734375" y="273.0">World</node>
-                <node x="597.0" y="1205.0">sun</node>
-                <node x="967.0" y="1005.0">groovyjarjarasm</node>
-                <node x="156.0" y="1205.0">java</node>
-                <node x="1004.0234375" y="96.0">Bounded</node>
-                <node x="0.0" y="1205.0">javax</node>
-                <node x="531.0" y="1129.0">javafx</node>
-                <node x="741.0" y="1205.0">net</node>
-                <node x="734.3723958333334" y="448.0">Bike</node>
-                <node x="231.3984375" y="566.25">Turtle</node>
-                <node x="948.3723958333334" y="436.0">Bus</node>
-                <node x="693.0" y="1129.0">images</node>
-                <node x="753.7734375" y="285.0">Player</node>
-                <node x="1017.0" y="1129.0">oracle</node>
-                <node x="520.3723958333334" y="448.0">Racecar</node>
-                <node x="464.0234375" y="0.0">Sprite</node>
-                <node x="17.3984375" y="577.0">Log</node>
-                <node x="885.0" y="1205.0">org</node>
-                <node x="826.0" y="761.0">Position</node>
-                <node x="278.7734375" y="273.0">Tile</node>
-                <node x="705.2734375" y="84.0">Moveable</node>
-                <node x="0.0" y="1129.0">META-INF</node>
-                <node x="452.0" y="1205.0">jdk</node>
-                <node x="855.0" y="1129.0">groovy</node>
-                <node x="571.0" y="761.0">DetailsArray</node>
-                <node x="281.4609375" y="460.0">RideableObject</node>
-                <node x="518.7734375" y="285.0">MovableObject</node>
-                <node x="235.0" y="1005.0">groovyjarjarcommonscli</node>
-                <node x="744.0" y="1005.0">groovyjarjarantlr</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="Bike" target="MovableObject">
-                  <point x="0.0" y="-27.5" />
-                  <point x="831.3723958333334" y="416.0" />
-                  <point x="669.2734375" y="416.0" />
-                  <point x="43.0" y="39.5" />
-                </edge>
-                <edge source="RideableObject" target="Pushes">
-                  <point x="-33.75" y="-15.5" />
-                  <point x="315.2109375" y="396.0" />
-                  <point x="218.2734375" y="396.0" />
-                  <point x="40.5" y="27.5" />
-                </edge>
-                <edge source="Turtle" target="RideableObject">
-                  <point x="0.0" y="-75.5" />
-                  <point x="346.8984375" y="540.0" />
-                  <point x="345.2109375" y="541.25" />
-                  <point x="0.0" y="15.5" />
-                </edge>
-                <edge source="Tile" target="Sprite">
-                  <point x="0.0" y="-51.5" />
-                  <point x="388.7734375" y="253.0" />
-                  <point x="500.1901041666667" y="253.0" />
-                  <point x="-72.33333333333331" y="111.5" />
-                </edge>
-                <edge source="Bulldozer" target="Pushes">
-                  <point x="-48.5" y="-39.5" />
-                  <point x="48.5" y="416.0" />
-                  <point x="137.2734375" y="416.0" />
-                  <point x="-40.5" y="27.5" />
-                </edge>
-                <edge source="Log" target="RideableObject">
-                  <point x="0.0" y="-63.5" />
-                  <point x="114.3984375" y="540.0" />
-                  <point x="303.9609375" y="540.0" />
-                  <point x="-45.0" y="15.5" />
-                </edge>
-                <edge source="MovableObject" target="Sprite">
-                  <point x="-53.75" y="-39.5" />
-                  <point x="0.0" y="111.5" />
-                </edge>
-                <edge source="Player" target="Bounded">
-                  <point x="64.66666666666663" y="-39.5" />
-                  <point x="915.4401041666666" y="253.0" />
-                  <point x="1027.7734375" y="253.0" />
-                  <point x="-23.75" y="15.5" />
-                </edge>
-                <edge source="MovableObject" target="Moveable">
-                  <point x="53.75" y="-39.5" />
-                  <point x="680.0234375" y="253.0" />
-                  <point x="753.7734375" y="253.0" />
-                  <point x="-48.5" y="27.5" />
-                </edge>
-                <edge source="Player" target="Sprite">
-                  <point x="-64.66666666666674" y="-39.5" />
-                  <point x="786.1067708333333" y="243.0" />
-                  <point x="644.8567708333333" y="243.0" />
-                  <point x="72.33333333333326" y="111.5" />
-                </edge>
-                <edge source="Bulldozer" target="MovableObject">
-                  <point x="48.5" y="-39.5" />
-                  <point x="145.5" y="406.0" />
-                  <point x="540.2734375" y="406.0" />
-                  <point x="-86.0" y="39.5" />
-                </edge>
-                <edge source="Racecar" target="MovableObject">
-                  <point x="0.0" y="-27.5" />
-                  <point x="617.3723958333334" y="416.0" />
-                  <point x="626.2734375" y="416.0" />
-                  <point x="0.0" y="39.5" />
-                </edge>
-                <edge source="LongLog" target="RideableObject">
-                  <point x="0.0" y="-63.5" />
-                  <point x="579.3984375" y="540.0" />
-                  <point x="393.9609375" y="540.0" />
-                  <point x="45.0" y="15.5" />
-                </edge>
-                <edge source="Bus" target="MovableObject">
-                  <point x="0.0" y="-39.5" />
-                  <point x="1045.3723958333335" y="406.0" />
-                  <point x="712.2734375" y="406.0" />
-                  <point x="86.0" y="39.5" />
-                </edge>
-                <edge source="RideableObject" target="MovableObject">
-                  <point x="33.75" y="-15.5" />
-                  <point x="382.7109375" y="416.0" />
-                  <point x="583.2734375" y="416.0" />
-                  <point x="-43.0" y="39.5" />
-                </edge>
-                <edge source="World" target="Bounded">
-                  <point x="0.0" y="-51.5" />
-                  <point x="23.75" y="15.5" />
-                </edge>
-                <edge source="Player" target="Moveable">
-                  <point x="0.0" y="-39.5" />
-                  <point x="48.5" y="27.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.8" x="91.5" y="280.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="159">
+      <file leaf-file-name="World.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="121" column="23" lean-forward="true" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
+              <folding>
+                <element signature="e#3196#3197#0" expanded="true" />
+                <element signature="e#3223#3224#0" expanded="true" />
+                <element signature="e#3266#3267#0" expanded="true" />
+                <element signature="e#3298#3299#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorldReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WorldReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1805">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3768#3769#0" expanded="true" />
+                <element signature="e#3816#3817#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,13 +92,20 @@
       <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sprite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="209">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="68" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -224,57 +113,62 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+            <state relative-caret-position="2517">
+              <caret line="133" column="88" selection-start-line="133" selection-start-column="88" selection-end-line="133" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Player#0;class#Player#0" />
-                <element signature="method#Player#1;class#Player#0" />
+                <element signature="e#5345#5346#0" expanded="true" />
+                <element signature="e#5372#5373#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RideableObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RideableObject.java">
+      <file leaf-file-name="Bike.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bike.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="418">
+              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Racecar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Racecar.java">
+      <file leaf-file-name="ExtraLife.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ExtraLife.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            <state relative-caret-position="864">
+              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
               <folding>
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1604#1605#0" expanded="true" />
+                <element signature="e#1652#1653#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bulldozer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bulldozer.java">
+      <file leaf-file-name="LongLog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LongLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="247">
+              <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Turtle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Turtle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="e#1680#1681#0" expanded="true" />
+                <element signature="e#1719#1720#0" expanded="true" />
+                <element signature="e#1756#1757#0" expanded="true" />
+                <element signature="e#1793#1794#0" expanded="true" />
+                <element signature="e#1821#1822#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -282,20 +176,8 @@
       <file leaf-file-name="GameManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="155">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -308,8 +190,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -324,23 +206,31 @@
         <option value="$PROJECT_DIR$/src/Bounded.java" />
         <option value="$PROJECT_DIR$/src/Details.java" />
         <option value="$PROJECT_DIR$/src/DetailsArray.java" />
-        <option value="$PROJECT_DIR$/src/Tile.java" />
         <option value="$PROJECT_DIR$/src/TileList.java" />
-        <option value="$PROJECT_DIR$/src/World.java" />
         <option value="$PROJECT_DIR$/src/killsPlayer.java" />
         <option value="$PROJECT_DIR$/src/MoveableObject.java" />
-        <option value="$PROJECT_DIR$/src/Bike.java" />
         <option value="$PROJECT_DIR$/src/MovableObject.java" />
         <option value="$PROJECT_DIR$/src/Pushes.java" />
         <option value="$PROJECT_DIR$/src/RideableObject.java" />
+        <option value="$PROJECT_DIR$/src/Bike.java" />
+        <option value="$PROJECT_DIR$/src/utilities/ExtraLife.java" />
+        <option value="$PROJECT_DIR$/src/App.java" />
+        <option value="$PROJECT_DIR$/src/Tile.java" />
+        <option value="$PROJECT_DIR$/src/Hole.java" />
+        <option value="$PROJECT_DIR$/src/Bulldozer.java" />
         <option value="$PROJECT_DIR$/src/LongLog.java" />
         <option value="$PROJECT_DIR$/src/Log.java" />
-        <option value="$PROJECT_DIR$/src/Turtle.java" />
-        <option value="$PROJECT_DIR$/src/GameManager.java" />
-        <option value="$PROJECT_DIR$/src/Sprite.java" />
+        <option value="$PROJECT_DIR$/src/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/Bus.java" />
         <option value="$PROJECT_DIR$/src/Racecar.java" />
-        <option value="$PROJECT_DIR$/src/Bulldozer.java" />
+        <option value="$PROJECT_DIR$/src/utilities/BoundingBox.java" />
+        <option value="$PROJECT_DIR$/src/Turtle.java" />
+        <option value="$PROJECT_DIR$/src/WorldReader.java" />
+        <option value="$PROJECT_DIR$/assets/levels/0.lvl" />
+        <option value="$PROJECT_DIR$/src/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/ExtraLife.java" />
+        <option value="$PROJECT_DIR$/src/World.java" />
+        <option value="$PROJECT_DIR$/src/Sprite.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
       </list>
     </option>
@@ -355,9 +245,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="690" />
-    <option name="y" value="-25" />
-    <option name="width" value="980" />
+    <option name="x" value="392" />
+    <option name="y" value="-18" />
+    <option name="width" value="978" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -368,9 +258,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -381,7 +271,29 @@
             <path>
               <item name="ShadowLeap" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShadowLeap" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShadowLeap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShadowLeap" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShadowLeap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShadowLeap" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="levels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShadowLeap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShadowLeap" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShadowLeap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShadowLeap" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -390,19 +302,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/William/Documents/GitHub/ShadowLeap/src/Player.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537240598609" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537512201933" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kit Man\Documents\GitHub\ShadowLeap\assets" />
+      <recent name="C:\Users\Kit Man\Documents\GitHub\ShadowLeap\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kit Man\Documents\GitHub\ShadowLeap\src" />
       <recent name="C:\Users\Kit Man\IdeaProjects\project2\lib" />
       <recent name="C:\Users\Kit Man\IdeaProjects\project2" />
       <recent name="C:\Users\Kit Man\IdeaProjects\project2\src" />
@@ -421,6 +342,11 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="project2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method>
@@ -471,6 +397,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -485,11 +416,13 @@
       <workItem from="1537158314630" duration="8564000" />
       <workItem from="1537235927298" duration="3159000" />
       <workItem from="1537326675252" duration="3269000" />
+      <workItem from="1537597014978" duration="10269000" />
+      <workItem from="1537795093999" duration="40228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15688000" />
+    <option name="totallyTimeSpent" value="83115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -497,53 +430,63 @@
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32831737" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50065106" side_tool="true" weight="0.32968536" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49934897" visible="true" weight="0.32968536" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25260416" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.12890625" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32968536" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3994528" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info id="Designer" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49934897" visible="true" weight="0.32968536" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25260416" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12890625" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" />
       <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32968536" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50065106" side_tool="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3994528" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32831737" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info id="Favorites" order="3" side_tool="true" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -551,609 +494,21 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="19" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="World.clock" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="305.0" y="1205.0">com</node>
-            <node x="248.0" y="761.0">App</node>
-            <node x="96.7734375" y="297.0">Pushes</node>
-            <node x="188.0" y="1129.0">netscape</node>
-            <node x="0.0" y="761.0">TileList</node>
-            <node x="0.0" y="436.0">Bulldozer</node>
-            <node x="0.0" y="1005.0">GameManager</node>
-            <node x="482.3984375" y="577.0">LongLog</node>
-            <node x="492.0" y="1005.0">toolbarButtonGraphics</node>
-            <node x="363.0" y="1129.0">utilities</node>
-            <node x="967.7734375" y="273.0">World</node>
-            <node x="597.0" y="1205.0">sun</node>
-            <node x="967.0" y="1005.0">groovyjarjarasm</node>
-            <node x="156.0" y="1205.0">java</node>
-            <node x="1004.0234375" y="96.0">Bounded</node>
-            <node x="0.0" y="1205.0">javax</node>
-            <node x="531.0" y="1129.0">javafx</node>
-            <node x="741.0" y="1205.0">net</node>
-            <node x="734.3723958333334" y="448.0">Bike</node>
-            <node x="231.3984375" y="566.25">Turtle</node>
-            <node x="948.3723958333334" y="436.0">Bus</node>
-            <node x="693.0" y="1129.0">images</node>
-            <node x="753.7734375" y="285.0">Player</node>
-            <node x="1017.0" y="1129.0">oracle</node>
-            <node x="520.3723958333334" y="448.0">Racecar</node>
-            <node x="464.0234375" y="0.0">Sprite</node>
-            <node x="17.3984375" y="577.0">Log</node>
-            <node x="885.0" y="1205.0">org</node>
-            <node x="826.0" y="761.0">Position</node>
-            <node x="278.7734375" y="273.0">Tile</node>
-            <node x="705.2734375" y="84.0">Moveable</node>
-            <node x="0.0" y="1129.0">META-INF</node>
-            <node x="452.0" y="1205.0">jdk</node>
-            <node x="855.0" y="1129.0">groovy</node>
-            <node x="571.0" y="761.0">DetailsArray</node>
-            <node x="281.4609375" y="460.0">RideableObject</node>
-            <node x="518.7734375" y="285.0">MovableObject</node>
-            <node x="235.0" y="1005.0">groovyjarjarcommonscli</node>
-            <node x="744.0" y="1005.0">groovyjarjarantlr</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Bike" target="MovableObject">
-              <point x="0.0" y="-27.5" />
-              <point x="831.3723958333334" y="416.0" />
-              <point x="669.2734375" y="416.0" />
-              <point x="43.0" y="39.5" />
-            </edge>
-            <edge source="RideableObject" target="Pushes">
-              <point x="-33.75" y="-15.5" />
-              <point x="315.2109375" y="396.0" />
-              <point x="218.2734375" y="396.0" />
-              <point x="40.5" y="27.5" />
-            </edge>
-            <edge source="Turtle" target="RideableObject">
-              <point x="0.0" y="-75.5" />
-              <point x="346.8984375" y="540.0" />
-              <point x="345.2109375" y="541.25" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="Tile" target="Sprite">
-              <point x="0.0" y="-51.5" />
-              <point x="388.7734375" y="253.0" />
-              <point x="500.1901041666667" y="253.0" />
-              <point x="-72.33333333333331" y="111.5" />
-            </edge>
-            <edge source="Bulldozer" target="Pushes">
-              <point x="-48.5" y="-39.5" />
-              <point x="48.5" y="416.0" />
-              <point x="137.2734375" y="416.0" />
-              <point x="-40.5" y="27.5" />
-            </edge>
-            <edge source="Log" target="RideableObject">
-              <point x="0.0" y="-63.5" />
-              <point x="114.3984375" y="540.0" />
-              <point x="303.9609375" y="540.0" />
-              <point x="-45.0" y="15.5" />
-            </edge>
-            <edge source="MovableObject" target="Sprite">
-              <point x="-53.75" y="-39.5" />
-              <point x="0.0" y="111.5" />
-            </edge>
-            <edge source="Player" target="Bounded">
-              <point x="64.66666666666663" y="-39.5" />
-              <point x="915.4401041666666" y="253.0" />
-              <point x="1027.7734375" y="253.0" />
-              <point x="-23.75" y="15.5" />
-            </edge>
-            <edge source="MovableObject" target="Moveable">
-              <point x="53.75" y="-39.5" />
-              <point x="680.0234375" y="253.0" />
-              <point x="753.7734375" y="253.0" />
-              <point x="-48.5" y="27.5" />
-            </edge>
-            <edge source="Player" target="Sprite">
-              <point x="-64.66666666666674" y="-39.5" />
-              <point x="786.1067708333333" y="243.0" />
-              <point x="644.8567708333333" y="243.0" />
-              <point x="72.33333333333326" y="111.5" />
-            </edge>
-            <edge source="Bulldozer" target="MovableObject">
-              <point x="48.5" y="-39.5" />
-              <point x="145.5" y="406.0" />
-              <point x="540.2734375" y="406.0" />
-              <point x="-86.0" y="39.5" />
-            </edge>
-            <edge source="Racecar" target="MovableObject">
-              <point x="0.0" y="-27.5" />
-              <point x="617.3723958333334" y="416.0" />
-              <point x="626.2734375" y="416.0" />
-              <point x="0.0" y="39.5" />
-            </edge>
-            <edge source="LongLog" target="RideableObject">
-              <point x="0.0" y="-63.5" />
-              <point x="579.3984375" y="540.0" />
-              <point x="393.9609375" y="540.0" />
-              <point x="45.0" y="15.5" />
-            </edge>
-            <edge source="Bus" target="MovableObject">
-              <point x="0.0" y="-39.5" />
-              <point x="1045.3723958333335" y="406.0" />
-              <point x="712.2734375" y="406.0" />
-              <point x="86.0" y="39.5" />
-            </edge>
-            <edge source="RideableObject" target="MovableObject">
-              <point x="33.75" y="-15.5" />
-              <point x="382.7109375" y="416.0" />
-              <point x="583.2734375" y="416.0" />
-              <point x="-43.0" y="39.5" />
-            </edge>
-            <edge source="World" target="Bounded">
-              <point x="0.0" y="-51.5" />
-              <point x="23.75" y="15.5" />
-            </edge>
-            <edge source="Player" target="Moveable">
-              <point x="0.0" y="-39.5" />
-              <point x="48.5" y="27.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8" x="91.5" y="280.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Turtle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Player#0;class#Player#0" />
-            <element signature="method#Player#1;class#Player#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Moveable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Details.java" />
-    <entry file="file://$PROJECT_DIR$/src/DetailsArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="305.0" y="1205.0">com</node>
-            <node x="248.0" y="761.0">App</node>
-            <node x="96.7734375" y="297.0">Pushes</node>
-            <node x="188.0" y="1129.0">netscape</node>
-            <node x="0.0" y="761.0">TileList</node>
-            <node x="0.0" y="436.0">Bulldozer</node>
-            <node x="0.0" y="1005.0">GameManager</node>
-            <node x="482.3984375" y="577.0">LongLog</node>
-            <node x="492.0" y="1005.0">toolbarButtonGraphics</node>
-            <node x="363.0" y="1129.0">utilities</node>
-            <node x="967.7734375" y="273.0">World</node>
-            <node x="597.0" y="1205.0">sun</node>
-            <node x="967.0" y="1005.0">groovyjarjarasm</node>
-            <node x="156.0" y="1205.0">java</node>
-            <node x="1004.0234375" y="96.0">Bounded</node>
-            <node x="0.0" y="1205.0">javax</node>
-            <node x="531.0" y="1129.0">javafx</node>
-            <node x="741.0" y="1205.0">net</node>
-            <node x="734.3723958333334" y="448.0">Bike</node>
-            <node x="231.3984375" y="566.25">Turtle</node>
-            <node x="948.3723958333334" y="436.0">Bus</node>
-            <node x="693.0" y="1129.0">images</node>
-            <node x="753.7734375" y="285.0">Player</node>
-            <node x="1017.0" y="1129.0">oracle</node>
-            <node x="520.3723958333334" y="448.0">Racecar</node>
-            <node x="464.0234375" y="0.0">Sprite</node>
-            <node x="17.3984375" y="577.0">Log</node>
-            <node x="885.0" y="1205.0">org</node>
-            <node x="826.0" y="761.0">Position</node>
-            <node x="278.7734375" y="273.0">Tile</node>
-            <node x="705.2734375" y="84.0">Moveable</node>
-            <node x="0.0" y="1129.0">META-INF</node>
-            <node x="452.0" y="1205.0">jdk</node>
-            <node x="855.0" y="1129.0">groovy</node>
-            <node x="571.0" y="761.0">DetailsArray</node>
-            <node x="281.4609375" y="460.0">RideableObject</node>
-            <node x="518.7734375" y="285.0">MovableObject</node>
-            <node x="235.0" y="1005.0">groovyjarjarcommonscli</node>
-            <node x="744.0" y="1005.0">groovyjarjarantlr</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Bike" target="MovableObject">
-              <point x="0.0" y="-27.5" />
-              <point x="831.3723958333334" y="416.0" />
-              <point x="669.2734375" y="416.0" />
-              <point x="43.0" y="39.5" />
-            </edge>
-            <edge source="RideableObject" target="Pushes">
-              <point x="-33.75" y="-15.5" />
-              <point x="315.2109375" y="396.0" />
-              <point x="218.2734375" y="396.0" />
-              <point x="40.5" y="27.5" />
-            </edge>
-            <edge source="Turtle" target="RideableObject">
-              <point x="0.0" y="-75.5" />
-              <point x="346.8984375" y="540.0" />
-              <point x="345.2109375" y="541.25" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="Tile" target="Sprite">
-              <point x="0.0" y="-51.5" />
-              <point x="388.7734375" y="253.0" />
-              <point x="500.1901041666667" y="253.0" />
-              <point x="-72.33333333333331" y="111.5" />
-            </edge>
-            <edge source="Bulldozer" target="Pushes">
-              <point x="-48.5" y="-39.5" />
-              <point x="48.5" y="416.0" />
-              <point x="137.2734375" y="416.0" />
-              <point x="-40.5" y="27.5" />
-            </edge>
-            <edge source="Log" target="RideableObject">
-              <point x="0.0" y="-63.5" />
-              <point x="114.3984375" y="540.0" />
-              <point x="303.9609375" y="540.0" />
-              <point x="-45.0" y="15.5" />
-            </edge>
-            <edge source="MovableObject" target="Sprite">
-              <point x="-53.75" y="-39.5" />
-              <point x="0.0" y="111.5" />
-            </edge>
-            <edge source="Player" target="Bounded">
-              <point x="64.66666666666663" y="-39.5" />
-              <point x="915.4401041666666" y="253.0" />
-              <point x="1027.7734375" y="253.0" />
-              <point x="-23.75" y="15.5" />
-            </edge>
-            <edge source="MovableObject" target="Moveable">
-              <point x="53.75" y="-39.5" />
-              <point x="680.0234375" y="253.0" />
-              <point x="753.7734375" y="253.0" />
-              <point x="-48.5" y="27.5" />
-            </edge>
-            <edge source="Player" target="Sprite">
-              <point x="-64.66666666666674" y="-39.5" />
-              <point x="786.1067708333333" y="243.0" />
-              <point x="644.8567708333333" y="243.0" />
-              <point x="72.33333333333326" y="111.5" />
-            </edge>
-            <edge source="Bulldozer" target="MovableObject">
-              <point x="48.5" y="-39.5" />
-              <point x="145.5" y="406.0" />
-              <point x="540.2734375" y="406.0" />
-              <point x="-86.0" y="39.5" />
-            </edge>
-            <edge source="Racecar" target="MovableObject">
-              <point x="0.0" y="-27.5" />
-              <point x="617.3723958333334" y="416.0" />
-              <point x="626.2734375" y="416.0" />
-              <point x="0.0" y="39.5" />
-            </edge>
-            <edge source="LongLog" target="RideableObject">
-              <point x="0.0" y="-63.5" />
-              <point x="579.3984375" y="540.0" />
-              <point x="393.9609375" y="540.0" />
-              <point x="45.0" y="15.5" />
-            </edge>
-            <edge source="Bus" target="MovableObject">
-              <point x="0.0" y="-39.5" />
-              <point x="1045.3723958333335" y="406.0" />
-              <point x="712.2734375" y="406.0" />
-              <point x="86.0" y="39.5" />
-            </edge>
-            <edge source="RideableObject" target="MovableObject">
-              <point x="33.75" y="-15.5" />
-              <point x="382.7109375" y="416.0" />
-              <point x="583.2734375" y="416.0" />
-              <point x="-43.0" y="39.5" />
-            </edge>
-            <edge source="World" target="Bounded">
-              <point x="0.0" y="-51.5" />
-              <point x="23.75" y="15.5" />
-            </edge>
-            <edge source="Player" target="Moveable">
-              <point x="0.0" y="-39.5" />
-              <point x="48.5" y="27.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8" x="91.5" y="280.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="40" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MovableObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TileList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DetailsArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Moveable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Details.java" />
-    <entry file="file://$PROJECT_DIR$/project2.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bounded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/killsPlayer.java" />
-    <entry file="file://$PROJECT_DIR$/src/Moveable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DetailsArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TileList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pushes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LongLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1162,18 +517,28 @@
         <state relative-caret-position="304">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#92#93#0" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MovableObject.java">
+    <entry file="file://$PROJECT_DIR$/src/MovableObject.java" />
+    <entry file="file://$PROJECT_DIR$/src/Turtle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/RideableObject.java" />
+    <entry file="file://$PROJECT_DIR$/assets/levels/0.lvl">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="uml://JAVA/">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -1181,244 +546,413 @@
           <ID>JAVA</ID>
           <OriginalElement />
           <nodes>
-            <node x="305.0" y="1205.0">com</node>
-            <node x="248.0" y="761.0">App</node>
-            <node x="96.7734375" y="297.0">Pushes</node>
-            <node x="188.0" y="1129.0">netscape</node>
-            <node x="0.0" y="761.0">TileList</node>
-            <node x="0.0" y="436.0">Bulldozer</node>
-            <node x="0.0" y="1005.0">GameManager</node>
-            <node x="482.3984375" y="577.0">LongLog</node>
-            <node x="492.0" y="1005.0">toolbarButtonGraphics</node>
-            <node x="363.0" y="1129.0">utilities</node>
-            <node x="967.7734375" y="273.0">World</node>
-            <node x="597.0" y="1205.0">sun</node>
-            <node x="967.0" y="1005.0">groovyjarjarasm</node>
-            <node x="156.0" y="1205.0">java</node>
-            <node x="1004.0234375" y="96.0">Bounded</node>
-            <node x="0.0" y="1205.0">javax</node>
-            <node x="531.0" y="1129.0">javafx</node>
-            <node x="741.0" y="1205.0">net</node>
-            <node x="734.3723958333334" y="448.0">Bike</node>
-            <node x="231.3984375" y="566.25">Turtle</node>
-            <node x="948.3723958333334" y="436.0">Bus</node>
-            <node x="693.0" y="1129.0">images</node>
-            <node x="753.7734375" y="285.0">Player</node>
-            <node x="1017.0" y="1129.0">oracle</node>
-            <node x="520.3723958333334" y="448.0">Racecar</node>
-            <node x="464.0234375" y="0.0">Sprite</node>
-            <node x="17.3984375" y="577.0">Log</node>
-            <node x="885.0" y="1205.0">org</node>
-            <node x="826.0" y="761.0">Position</node>
-            <node x="278.7734375" y="273.0">Tile</node>
-            <node x="705.2734375" y="84.0">Moveable</node>
-            <node x="0.0" y="1129.0">META-INF</node>
-            <node x="452.0" y="1205.0">jdk</node>
-            <node x="855.0" y="1129.0">groovy</node>
-            <node x="571.0" y="761.0">DetailsArray</node>
-            <node x="281.4609375" y="460.0">RideableObject</node>
-            <node x="518.7734375" y="285.0">MovableObject</node>
-            <node x="235.0" y="1005.0">groovyjarjarcommonscli</node>
-            <node x="744.0" y="1005.0">groovyjarjarantlr</node>
+            <node x="" y="">App</node>
+            <node x="" y="">Bus</node>
+            <node x="" y="">Player</node>
+            <node x="" y="">Racecar</node>
+            <node x="" y="">Sprite</node>
+            <node x="" y="">Log</node>
+            <node x="" y="">Bulldozer</node>
+            <node x="" y="">LongLog</node>
+            <node x="" y="">Tile</node>
+            <node x="" y="">utilities</node>
+            <node x="" y="">World</node>
+            <node x="" y="">Vehicle</node>
+            <node x="" y="">Bike</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="Bike" target="MovableObject">
-              <point x="0.0" y="-27.5" />
-              <point x="831.3723958333334" y="416.0" />
-              <point x="669.2734375" y="416.0" />
-              <point x="43.0" y="39.5" />
-            </edge>
-            <edge source="RideableObject" target="Pushes">
-              <point x="-33.75" y="-15.5" />
-              <point x="315.2109375" y="396.0" />
-              <point x="218.2734375" y="396.0" />
-              <point x="40.5" y="27.5" />
-            </edge>
-            <edge source="Turtle" target="RideableObject">
-              <point x="0.0" y="-75.5" />
-              <point x="346.8984375" y="540.0" />
-              <point x="345.2109375" y="541.25" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="Tile" target="Sprite">
-              <point x="0.0" y="-51.5" />
-              <point x="388.7734375" y="253.0" />
-              <point x="500.1901041666667" y="253.0" />
-              <point x="-72.33333333333331" y="111.5" />
-            </edge>
-            <edge source="Bulldozer" target="Pushes">
-              <point x="-48.5" y="-39.5" />
-              <point x="48.5" y="416.0" />
-              <point x="137.2734375" y="416.0" />
-              <point x="-40.5" y="27.5" />
-            </edge>
-            <edge source="Log" target="RideableObject">
-              <point x="0.0" y="-63.5" />
-              <point x="114.3984375" y="540.0" />
-              <point x="303.9609375" y="540.0" />
-              <point x="-45.0" y="15.5" />
-            </edge>
-            <edge source="MovableObject" target="Sprite">
-              <point x="-53.75" y="-39.5" />
-              <point x="0.0" y="111.5" />
-            </edge>
-            <edge source="Player" target="Bounded">
-              <point x="64.66666666666663" y="-39.5" />
-              <point x="915.4401041666666" y="253.0" />
-              <point x="1027.7734375" y="253.0" />
-              <point x="-23.75" y="15.5" />
-            </edge>
-            <edge source="MovableObject" target="Moveable">
-              <point x="53.75" y="-39.5" />
-              <point x="680.0234375" y="253.0" />
-              <point x="753.7734375" y="253.0" />
-              <point x="-48.5" y="27.5" />
-            </edge>
-            <edge source="Player" target="Sprite">
-              <point x="-64.66666666666674" y="-39.5" />
-              <point x="786.1067708333333" y="243.0" />
-              <point x="644.8567708333333" y="243.0" />
-              <point x="72.33333333333326" y="111.5" />
-            </edge>
-            <edge source="Bulldozer" target="MovableObject">
-              <point x="48.5" y="-39.5" />
-              <point x="145.5" y="406.0" />
-              <point x="540.2734375" y="406.0" />
-              <point x="-86.0" y="39.5" />
-            </edge>
-            <edge source="Racecar" target="MovableObject">
-              <point x="0.0" y="-27.5" />
-              <point x="617.3723958333334" y="416.0" />
-              <point x="626.2734375" y="416.0" />
-              <point x="0.0" y="39.5" />
-            </edge>
-            <edge source="LongLog" target="RideableObject">
-              <point x="0.0" y="-63.5" />
-              <point x="579.3984375" y="540.0" />
-              <point x="393.9609375" y="540.0" />
-              <point x="45.0" y="15.5" />
-            </edge>
-            <edge source="Bus" target="MovableObject">
-              <point x="0.0" y="-39.5" />
-              <point x="1045.3723958333335" y="406.0" />
-              <point x="712.2734375" y="406.0" />
-              <point x="86.0" y="39.5" />
-            </edge>
-            <edge source="RideableObject" target="MovableObject">
-              <point x="33.75" y="-15.5" />
-              <point x="382.7109375" y="416.0" />
-              <point x="583.2734375" y="416.0" />
-              <point x="-43.0" y="39.5" />
-            </edge>
-            <edge source="World" target="Bounded">
-              <point x="0.0" y="-51.5" />
-              <point x="23.75" y="15.5" />
-            </edge>
-            <edge source="Player" target="Moveable">
-              <point x="0.0" y="-39.5" />
-              <point x="48.5" y="27.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8" x="91.5" y="280.0" />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-8.0" y="534.0" />
           <SelectedNodes />
           <Categories>
+            <Category>Constructors</Category>
             <Category>Methods</Category>
+            <Category>Properties</Category>
           </Categories>
-          <SCOPE>All</SCOPE>
+          <SCOPE>Project Files</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Turtle.java">
+    <entry file="file://$PROJECT_DIR$/src/Racecar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-203">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameManager.java">
+    <entry file="file://$PROJECT_DIR$/src/Bike.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="133">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RideableObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="209">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="-133">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/BoundingBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bulldozer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-455">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1234">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Details.java" />
+    <entry file="file://$PROJECT_DIR$/project2.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bounded.java" />
+    <entry file="file://$PROJECT_DIR$/src/killsPlayer.java" />
+    <entry file="file://$PROJECT_DIR$/src/Moveable.java" />
+    <entry file="file://$PROJECT_DIR$/src/DetailsArray.java" />
+    <entry file="file://$PROJECT_DIR$/src/Position.java" />
+    <entry file="file://$PROJECT_DIR$/src/TileList.java" />
+    <entry file="file://$PROJECT_DIR$/src/Pushes.java" />
+    <entry file="file://$PROJECT_DIR$/src/MovableObject.java" />
+    <entry file="file://$PROJECT_DIR$/src/RideableObject.java" />
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="583.0" y="248.0">App</node>
+            <node x="0.0" y="172.0">Bus</node>
+            <node x="431.0" y="172.0">Turtle</node>
+            <node x="465.0" y="248.0">Hole</node>
+            <node x="547.0" y="81.0">Player</node>
+            <node x="490.5" y="0.0">Sprite</node>
+            <node x="87.0" y="172.0">Racecar</node>
+            <node x="534.0" y="172.0">Log</node>
+            <node x="0.0" y="248.0">GameManager</node>
+            <node x="311.0" y="172.0">Bulldozer</node>
+            <node x="198.99999999999997" y="172.0">LongLog</node>
+            <node x="649.0" y="81.0">Tile</node>
+            <node x="170.0" y="248.0">utilities</node>
+            <node x="338.0" y="248.0">World</node>
+            <node x="317.0" y="81.0">Vehicle</node>
+            <node x="425.0" y="81.0">ExtraLife</node>
+            <node x="621.0" y="172.0">Bike</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Vehicle" target="Sprite">
+              <point x="0.0" y="-15.5" />
+              <point x="361.0" y="51.0" />
+              <point x="500.875" y="51.0" />
+              <point x="-31.125" y="15.5" />
+            </edge>
+            <edge source="Bike" target="Vehicle">
+              <point x="0.0" y="-15.5" />
+              <point x="657.0" y="132.0" />
+              <point x="398.71428571428567" y="132.0" />
+              <point x="37.71428571428572" y="15.5" />
+            </edge>
+            <edge source="Tile" target="Sprite">
+              <point x="0.0" y="-15.5" />
+              <point x="683.0" y="51.0" />
+              <point x="563.125" y="51.0" />
+              <point x="31.125" y="15.5" />
+            </edge>
+            <edge source="Bus" target="Vehicle">
+              <point x="0.0" y="-15.5" />
+              <point x="33.5" y="132.0" />
+              <point x="323.2857142857142" y="132.0" />
+              <point x="-37.71428571428572" y="15.5" />
+            </edge>
+            <edge source="Bulldozer" target="Vehicle">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="Log" target="Vehicle">
+              <point x="0.0" y="-15.5" />
+              <point x="567.5" y="142.0" />
+              <point x="386.1428571428571" y="142.0" />
+              <point x="25.142857142857167" y="15.5" />
+            </edge>
+            <edge source="LongLog" target="Vehicle">
+              <point x="0.0" y="-15.5" />
+              <point x="244.99999999999997" y="152.0" />
+              <point x="348.42857142857144" y="152.0" />
+              <point x="-12.571428571428555" y="15.5" />
+            </edge>
+            <edge source="Player" target="Sprite">
+              <point x="0.0" y="-15.5" />
+              <point x="588.0" y="61.0" />
+              <point x="542.375" y="61.0" />
+              <point x="10.375" y="15.5" />
+            </edge>
+            <edge source="Turtle" target="Vehicle">
+              <point x="0.0" y="-15.5" />
+              <point x="472.5" y="152.0" />
+              <point x="373.57142857142856" y="152.0" />
+              <point x="12.571428571428612" y="15.5" />
+            </edge>
+            <edge source="Racecar" target="Vehicle">
+              <point x="0.0" y="-15.5" />
+              <point x="133.0" y="142.0" />
+              <point x="335.8571428571429" y="142.0" />
+              <point x="-25.14285714285711" y="15.5" />
+            </edge>
+            <edge source="ExtraLife" target="Sprite">
+              <point x="0.0" y="-15.5" />
+              <point x="476.0" y="61.0" />
+              <point x="521.625" y="61.0" />
+              <point x="-10.375" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.23023371456986574" x="917.0" y="1032.0" />
+          <SelectedNodes>
+            <node>App</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>Project Files</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/levels/1.lvl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3990" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Hole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Racecar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state relative-caret-position="304">
+          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/BoundingBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bulldozer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="180">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/levels/0.lvl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="85" column="13" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Turtle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1821#1822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LongLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExtraLife.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
+            <element signature="e#1652#1653#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sprite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="209">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="68" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WorldReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1805">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3768#3769#0" expanded="true" />
+            <element signature="e#3816#3817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="121" column="23" lean-forward="true" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
+          <folding>
+            <element signature="e#3196#3197#0" expanded="true" />
+            <element signature="e#3223#3224#0" expanded="true" />
+            <element signature="e#3266#3267#0" expanded="true" />
+            <element signature="e#3298#3299#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+        <state relative-caret-position="2517">
+          <caret line="133" column="88" selection-start-line="133" selection-start-column="88" selection-end-line="133" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Player#0;class#Player#0" />
-            <element signature="method#Player#1;class#Player#0" />
+            <element signature="e#5345#5346#0" expanded="true" />
+            <element signature="e#5372#5373#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,33 +1,58 @@
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
 import java.io.IOException;
 
 public class GameManager {
 
-    private static final int FINAL_LEVEL = 1;
+    private final static int MAX_LEVELS = 1;
 
-    private static final String LEVELS = "assets/levels";
+    private final static String levelDirectory = "assets/levels/";
+    private final static String levelSuffix = ".lvl";
 
-    private static final String LEVEL_SUFFIX = ".lvl";
-
-    private static int current_level;
-
-    private static int lives;
-
-    private static Player player;
+    private static int currentLevel;
 
     private static World world;
 
-    private static String levelName;
+    public GameManager() {
 
-    public static void newGame() throws SlickException,IOException {
-        current_level = 0;
-        lives = 0;
-        levelName = LEVELS + current_level + LEVEL_SUFFIX;
-        loadLevel(levelName);
     }
 
-    public static void loadLevel(String levelName) throws SlickException,IOException {
-        world = new World(levelName);
+    public void newGame() {
+        currentLevel = 0;
+
+        try {
+            world = new World(levelDirectory + currentLevel + levelSuffix);
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
     }
+
+    public void nextLevel() {
+        currentLevel++;
+
+        if (currentLevel > MAX_LEVELS) {
+            System.exit(0);
+        }
+    }
+
+    public void update(Input input, int delta) {
+        world.update(input, delta);
+
+        if (world.getHolesReached() == 5) {
+            nextLevel();
+            try {
+                world = new World(levelDirectory + currentLevel + levelSuffix);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void render(Graphics g) throws SlickException {
+        world.render(g);
+    }
+
+
 }

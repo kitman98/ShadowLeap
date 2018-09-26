@@ -1,13 +1,12 @@
-/**
- * BoundingBox complete class for SWEN20003: Object Oriented Software Development 2018
+package utilities; /**
+ * utilities.BoundingBox complete class for SWEN20003: Object Oriented Software Development 2018
  * by Eleanor McMurtry, University of Melbourne
  */
-package utilities;
 
 import org.newdawn.slick.Image;
 
 public class BoundingBox {
-	private static final float FUZZ = 0.95f;
+	private static final float FUZZ = 0.90f;
 	
 	private float left;
 	private float top;

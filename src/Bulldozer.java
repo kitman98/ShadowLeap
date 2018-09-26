@@ -1,25 +1,29 @@
 import org.newdawn.slick.Input;
 
-public class Bulldozer extends MovableObject implements Pushes{
+public class Bulldozer extends Vehicle {
 
-    private final static int speed = 5/100;
+    private static final String ASSET_PATH = "assets/bulldozer.png";
+    private static final float SPEED = 0.05f;
 
-    public Bulldozer() {
 
+
+    public Bulldozer(float x, float y, boolean moveRight) {
+        super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.PUSHES, Sprite.SOLID});
     }
 
-    /* inherited methods and methods from interfaces */
-
+    @Override
     public void update(Input input, int delta) {
-        super.getPosition().setxPos(super.getPosition().getxPos() + delta* this.getSpeed() *this.getDirection());
+        move(SPEED * delta * (getMoveRight() ? 1 : -1), 0);
+
+        // check if the vehicle has moved off the screen
+        if (getX() > App.SCREEN_WIDTH + getImage().getWidth() || getX() < -getImage().getWidth()
+                || getY() > App.SCREEN_HEIGHT + World.TILE_SIZE / 2 || getY() < -World.TILE_SIZE / 2) {
+            setX(getInitialX());
+        }
     }
 
-    public void push(Player player) {
-
-    }
-
-    /* getters */
-    public int getSpeed() {
-        return this.speed;
+    @Override
+    public final float getSpeed() {
+        return SPEED;
     }
 }
