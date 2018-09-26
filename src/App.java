@@ -5,12 +5,15 @@
 
 import org.newdawn.slick.*;
 
-import java.io.IOException;
+/*
+* Main class for the game.
+* Handle initialisation, input and rendering
+*
+* Project 2B: SWEN20003 by Kit Man Soo 916429
+* using Eleanor McMurtry's sample code
+*
+*/
 
-/**
- * Main class for the game.
- * Handles initialisation, input and rendering.
- */
 public class App extends BasicGame {
     /** screen width, in pixels */
     public static final int SCREEN_WIDTH = 1024;
@@ -34,8 +37,7 @@ public class App extends BasicGame {
      * @param delta Time passed since last frame (milliseconds).
      */
     @Override
-    public void update(GameContainer gc, int delta)
-            throws SlickException {
+    public void update(GameContainer gc, int delta) {
         // Get data about the current input (keyboard state).
         Input input = gc.getInput();
         gameManager.update(input, delta);

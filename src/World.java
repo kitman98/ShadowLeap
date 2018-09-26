@@ -64,11 +64,13 @@ public class World {
 	    if (clock >= lifeSpawnTime && livesGenerated == 0) {
             sprites.add(sprites.size(), new  ExtraLife(WorldReader.returnChosenLog(sprites,lifeLog)));
             livesGenerated++;
+            lifeDestroyTime = lifeSpawnTime + ExtraLife.DESPAWN_DELAY;
         }
 
         if (clock >= lifeDestroyTime && livesGenerated == 1) {
 	        sprites.remove(sprites.size() - 1);
-	        livesGenerated++;
+	        livesGenerated--;
+			lifeSpawnTime = clock + WorldReader.randomTime();
         }
 
 

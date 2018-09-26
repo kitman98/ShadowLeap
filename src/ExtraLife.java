@@ -11,12 +11,9 @@ public class ExtraLife extends Sprite {
     private static final float SPEED = 48f;
 
     private static final long MOVE_DELAY = 2000;
-    public static final long DESPAWN_DELAY = 14000 * 3;
+    public static final long DESPAWN_DELAY = 14000;
 
     private static long MOVE_CLOCK = World.clock + MOVE_DELAY;
-    private static long DESPAWN_CLOCK = World.clock + DESPAWN_DELAY;
-
-    static Random random = new Random();
 
     public ExtraLife(Vehicle log) {
         super(ASSET_PATH, log.getX(), log.getY(), new String[] {Sprite.PICKUP});
