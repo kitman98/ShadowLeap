@@ -42,7 +42,6 @@ public class GameManager {
 
         if (world.getHolesReached() == 5) {
             nextLevel();
-            world.resetWorld();
             try {
                 world = new World(levelDirectory + currentLevel + levelSuffix);
             } catch (IOException e) {
@@ -54,5 +53,6 @@ public class GameManager {
     public void render(Graphics g) throws SlickException {
         world.render(g);
     }
+
 
 }

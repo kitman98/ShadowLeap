@@ -18,16 +18,29 @@ public class Turtle extends Vehicle {
         super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.DRAGS, Sprite.SUBMERGES});
     }
 
-    public void update(Input input, int delta) {
-        if (World.clock == SUBMERGED_CLOCK) {
-            changeState();
+    public void render() {
+        if (!SUBMERGED) {
+            super.render();
         }
 
-        if (World.clock == OUTOFWATER_CLOCK) {
+        else {
+
+        }
+    }
+
+    public void update(Input input, int delta) {
+
+        // changes state of all the turtles based on the delay specified
+        if (World.clock >= SUBMERGED_CLOCK) {
             changeState();
-            SUBMERGED_CLOCK = World.clock + TIME_SUBMERGED;
+            SUBMERGED_CLOCK = OUTOFWATER_CLOCK + TIME_SUBMERGED;
+        }
+
+        if (World.clock >= OUTOFWATER_CLOCK) {
+            changeState();
             OUTOFWATER_CLOCK = SUBMERGED_CLOCK + TIME_NOT_SUBMERGED;
         }
+
 
         move(SPEED * delta * (getMoveRight() ? 1 : -1), 0);
 

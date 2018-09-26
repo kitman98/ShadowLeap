@@ -3,9 +3,6 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
-import java.util.ArrayList;
-
-
 public abstract class Sprite {
 	// this is a defined constant to avoid typos
 	public final static String HAZARD = "hazard";
@@ -80,11 +77,7 @@ public abstract class Sprite {
 		return !(x + World.TILE_SIZE / 2 > App.SCREEN_WIDTH || x - World.TILE_SIZE / 2 < 0
 			 || y + World.TILE_SIZE / 2 > App.SCREEN_HEIGHT || y - World.TILE_SIZE / 2 < 0);
 	}
-	
-	public final boolean onScreen() {
-		return onScreen(getX(), getY());
-	}
-	
+
 	public final boolean collides(Sprite other) {
 		return bounds.intersects(other.bounds);
 	}

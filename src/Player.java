@@ -7,7 +7,7 @@ public class Player extends Sprite {
 	private static final String ASSET_PATH = "assets/frog.png";
 
 	// stuff for lives
-	private static int PLAYER_LIVES = 3;
+	private static int PLAYER_LIVES;
     private static String LIVE_SRC = "assets/lives.png";
     private static int LIVES_START_X = 24;
     private static int LIVES_START_Y = 744;
@@ -27,11 +27,12 @@ public class Player extends Sprite {
     private static final String NULL = "null";
 
     // timer for delay when echo is set to null
-    private static final long delay = 100;
+    private static final long delay = 333;
     private static long nextReset = World.clock + delay;
 
     public Player(float x, float y) {
 		super(ASSET_PATH, x, y);
+		PLAYER_LIVES = 3;
 	}
 
 	@Override
@@ -92,6 +93,7 @@ public class Player extends Sprite {
 	@Override
 	public void onCollision(Sprite other, int delta) {
 
+        // checks if the sprite that player is on is a log or long log
         if (other.hasTag(Sprite.DRAGS) && !(other instanceof Turtle)) {
 
             safeState = true;
@@ -107,10 +109,12 @@ public class Player extends Sprite {
 
         if (other.hasTag(Sprite.DRAGS) && other instanceof Turtle) {
 
+            // if turtle is submerged then player is not safe from water
             if (((Turtle) other).getState()) {
                 // do nothing
             }
 
+            // turtle is not submerged and player is safe from water
             else {
 
                 safeState = true;
@@ -127,20 +131,25 @@ public class Player extends Sprite {
 
         }
 
+        // kills player if player touches a hazard and is not on a log,longlog or turtle
 		if (other.hasTag(Sprite.HAZARD) && !safeState) {
             reduceLives();
             resetPlayer();
 		}
 
 		if (other.hasTag(Sprite.SOLID)) {
+            // moves player back to previous position
             solidHit(other);
         }
 
         if (other.hasTag(Sprite.HOLE)) {
+            // checks if the hole is filled
+            // if hole is filled, player dies
             if (((Hole)other).isPlayerIn()) {
                 reduceLives();
             }
 
+            // else hole is filled
             else {
                 ((Hole) other).playerReaches();
                 World.reachedHole();
@@ -148,6 +157,12 @@ public class Player extends Sprite {
 
             resetPlayer();
 
+        }
+
+        if (other.hasTag(Sprite.PICKUP) && other instanceof ExtraLife) {
+            increaseLives();
+            // sets the time to destroy extraLife sprite to current time
+            World.lifeDestroyTime = World.clock;
         }
 	}
 

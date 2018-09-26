@@ -14,21 +14,31 @@ public class World {
             new float[] {96, 288, 480 , 672, 864};
     private static final float holeY = 48;
 
-	private ArrayList<Sprite> sprites;
+    // list containing all the sprites
+	private static ArrayList<Sprite> sprites;
 
+	// victory condition
 	private static int holesReached = 0;
+
+	// number of extra lives generated
+    private static int livesGenerated;
 
 	// internal game clock
     public static long clock = System.currentTimeMillis();
+
+    // when extra life will be spawned
+    public static long lifeSpawnTime;
+    public static long lifeDestroyTime;
+    public static int  lifeLog;
 	
 	public World(String currentLevel) throws IOException {
-		// create tiles
+		// create tiles and sprites
 		sprites = WorldReader.readLevel(currentLevel);
 
         // create player at the front of list so when list is reversed sprite is at the last position so the player is rendered last
         sprites.add(0,new Player(App.SCREEN_WIDTH / 2, App.SCREEN_HEIGHT - TILE_SIZE));
 
-        // reverses sprite list
+        // reverses sprite list to ensure that player is tested with vehicles first then only tile hazards (water)
         Collections.reverse(sprites);
 
         // create holes
@@ -36,12 +46,30 @@ public class World {
             sprites.add(new Hole(x, holeY));
         }
 
+        // initialise world state
+        holesReached = 0;
+
+        // set timers for extra life
+        lifeSpawnTime = clock + WorldReader.randomTime();
+        lifeDestroyTime = lifeSpawnTime + ExtraLife.DESPAWN_DELAY;
+        lifeLog = WorldReader.pickRandomLog(sprites);
+        livesGenerated = 0;
+
     }
 	
 	public void update(Input input, int delta) {
 
-	    int n;
 	    clock = System.currentTimeMillis();
+
+	    if (clock >= lifeSpawnTime && livesGenerated == 0) {
+            sprites.add(sprites.size(), new  ExtraLife(WorldReader.returnChosenLog(sprites,lifeLog)));
+            livesGenerated++;
+        }
+
+        if (clock >= lifeDestroyTime && livesGenerated == 1) {
+	        sprites.remove(sprites.size() - 1);
+	        livesGenerated++;
+        }
 
 
 		for (Sprite sprite : sprites) {
@@ -66,6 +94,10 @@ public class World {
 			}
 
 		}
+
+		if (input.isKeyPressed(Input.KEY_E)) {
+	        holesReached = 5;
+        }
 	}
 	
 	public void render(Graphics g) throws SlickException {
@@ -94,11 +126,4 @@ public class World {
 	    return holesReached;
     }
 
-    public static void resetWorld() {
-	    holesReached = 0;
-
-	    while(Player.livesLeft() < 3) {
-	        Player.increaseLives();
-        }
-    }
 }
