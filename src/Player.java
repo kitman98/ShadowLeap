@@ -172,6 +172,7 @@ public class Player extends Sprite {
 			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
 		}
 
+		// if player is pushed off the map
         if (getX() + getImage().getWidth() < 0 || getX() > App.SCREEN_WIDTH || getY() > App.SCREEN_HEIGHT) {
             reduceLives();
             resetPlayer();
