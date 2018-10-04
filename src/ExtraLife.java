@@ -1,5 +1,4 @@
 import org.newdawn.slick.Input;
-import java.util.Random;
 
 public class ExtraLife extends Sprite {
 
@@ -21,6 +20,8 @@ public class ExtraLife extends Sprite {
         this.moveRight = true;
     }
 
+    // moves ExtraLife at the same speed and direction as the log it is on,
+    // also moves the ExtraLife to the left and right of the log
     public void update(Input input, int delta) {
 
         move(log.getSpeed() * delta * (log.getMoveRight() ? 1 : -1), 0);
@@ -37,7 +38,7 @@ public class ExtraLife extends Sprite {
         }
     }
 
-
+    // predicts the next move of ExtraLife and decides whether to change direction
     private final void checkNextMove() {
         if (getX() + SPEED*(getMoveRight()? 1: -1) > log.getX() + log.getImage().getWidth()/2||
                 getX() + getImage().getWidth() + SPEED*(getMoveRight()? 1: -1) < log.getX() - log.getImage().getWidth()/4) {

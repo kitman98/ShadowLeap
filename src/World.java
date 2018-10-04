@@ -56,24 +56,27 @@ public class World {
         livesGenerated = 0;
 
     }
-	
+
+    // updates each sprite in the sprite list
 	public void update(Input input, int delta) {
 
 	    clock = System.currentTimeMillis();
 
+	    // checks for time to spawn an ExtraLife and spawns the ExtraLife
 	    if (clock >= lifeSpawnTime && livesGenerated == 0) {
             sprites.add(sprites.size(), new  ExtraLife(WorldReader.returnChosenLog(sprites,lifeLog)));
             livesGenerated++;
             lifeDestroyTime = lifeSpawnTime + ExtraLife.DESPAWN_DELAY;
         }
 
+        // checks for time to destroy ExtraLife and destroys if if necessary
         if (clock >= lifeDestroyTime && livesGenerated == 1) {
 	        sprites.remove(sprites.size() - 1);
 	        livesGenerated--;
 			lifeSpawnTime = clock + WorldReader.randomTime();
         }
 
-
+		// loop over sprite list and updates each sprite
 		for (Sprite sprite : sprites) {
 			sprite.update(input, delta);
 		}
@@ -97,6 +100,7 @@ public class World {
 
 		}
 
+		// for easier testing
 		if (input.isKeyPressed(Input.KEY_E)) {
 	        holesReached = 5;
         }

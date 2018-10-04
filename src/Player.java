@@ -7,7 +7,7 @@ public class Player extends Sprite {
 	private static final String ASSET_PATH = "assets/frog.png";
 
 	// stuff for lives
-	private static int PLAYER_LIVES;
+	private static int PLAYER_LIVES = 3;
     private static String LIVE_SRC = "assets/lives.png";
     private static int LIVES_START_X = 24;
     private static int LIVES_START_Y = 744;
@@ -32,9 +32,9 @@ public class Player extends Sprite {
 
     public Player(float x, float y) {
 		super(ASSET_PATH, x, y);
-		PLAYER_LIVES = 3;
 	}
 
+	// read user input and change player position based on input
 	@Override
 	public void update(Input input, int delta) {
 		int dx = 0,
@@ -70,6 +70,7 @@ public class Player extends Sprite {
 
 		safeState = false;
 
+		// resets the last move of the player to ensure that colliding with bulldozer works properly
 		if (World.clock >= nextReset) {
 		    echo = NULL;
 		    nextReset = World.clock + delay;
@@ -78,6 +79,7 @@ public class Player extends Sprite {
 
 	}
 
+	// renders frog on screen and number of lives on the bottom left of screen
 	@Override
     public void render() throws SlickException {
         super.render();
@@ -90,6 +92,7 @@ public class Player extends Sprite {
         }
     }
 
+    // decides what happens to frog when it collides or intersects with any other sprite
 	@Override
 	public void onCollision(Sprite other, int delta) {
 
@@ -166,6 +169,7 @@ public class Player extends Sprite {
         }
 	}
 
+	// pushes player in the direction of the sprite that has Push tag and also decides if player is pushed off screen
     @Override
 	public void push(Sprite other, int delta) {
 		if (other.hasTag(Sprite.PUSHES) && other instanceof Bulldozer) {
@@ -179,32 +183,37 @@ public class Player extends Sprite {
         }
 	}
 
+	// reset player position
 	public void resetPlayer() {
 	    setX(App.SCREEN_WIDTH / 2);
 	    setY( App.SCREEN_HEIGHT - World.TILE_SIZE);
     }
 
+    // increase number of lives player has remaining
     public static void increaseLives() {
         PLAYER_LIVES++;
     }
 
+    // reduces number of lives player has left and checks if player has no lives left
     public static void reduceLives() {
         PLAYER_LIVES--;
 
         checkLives();
     }
 
+    // returns number of lives left
     public static int livesLeft() {
         return PLAYER_LIVES;
     }
 
+    // if player has no lives left, exit
     public static void checkLives() {
         if (livesLeft() < 1) {
             System.exit(0);
         }
     }
 
-
+    // checks if player moves into solid sprite and adjusts player position if player hits a solid sprite
     public void solidHit(Sprite other) {
 
         nextReset = World.clock + delay;

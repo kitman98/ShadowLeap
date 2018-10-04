@@ -16,6 +16,7 @@ public class Hole extends Tile{
         playerIn = true;
     }
 
+    // if Player reaches Hole, renders a frog in hole
     public void render(){
 
         if (playerIn) {

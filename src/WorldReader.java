@@ -9,6 +9,7 @@ public class WorldReader {
 
     private static Random random = new Random();
 
+    // read .lvl file and generate sprite list
     public static ArrayList<Sprite> readLevel(String currentLevel) throws IOException {
 
         ArrayList<Sprite> spriteList = new ArrayList<>();

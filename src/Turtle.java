@@ -18,6 +18,7 @@ public class Turtle extends Vehicle {
         super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.DRAGS, Sprite.SUBMERGES});
     }
 
+    // renders Turtle if it isn't submerged, stops rendering when Turtle is submerged
     public void render() {
         if (!SUBMERGED) {
             super.render();
