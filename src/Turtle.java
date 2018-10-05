@@ -7,12 +7,14 @@ public class Turtle extends Vehicle {
     private static boolean SUBMERGED = false;
 
     // time submerged and time not submerged in ms
-    private static final long TIME_SUBMERGED = 7000;
-    private static final long TIME_NOT_SUBMERGED = 2000;
+    private static final long TIME_NOT_SUBMERGED = 7000;
+    private static final long TIME_SUBMERGED = 2000;
 
     // internal clock for all turtles
-    private static long SUBMERGED_CLOCK = World.clock + TIME_SUBMERGED;
-    private static long OUTOFWATER_CLOCK = SUBMERGED_CLOCK + TIME_NOT_SUBMERGED;
+    private static long OUTOFWATER_CLOCK = World.clock + TIME_NOT_SUBMERGED;
+    private static long SUBMERGED_CLOCK = OUTOFWATER_CLOCK + TIME_SUBMERGED;
+
+
 
     public Turtle(float x, float y, boolean moveRight) {
         super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.DRAGS, Sprite.SUBMERGES});
@@ -21,7 +23,7 @@ public class Turtle extends Vehicle {
     // renders Turtle if it isn't submerged, stops rendering when Turtle is submerged
     public void render() {
         if (!SUBMERGED) {
-            super.render();
+            getImage().getFlippedCopy(getMoveRight(), false).drawCentered(getX(), getY());
         }
 
         else {
@@ -63,4 +65,5 @@ public class Turtle extends Vehicle {
     public final float getSpeed() {
         return SPEED;
     }
+
 }

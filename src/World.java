@@ -23,7 +23,7 @@ public class World {
 	// number of extra lives generated
     private static int livesGenerated;
 
-	// internal game clock
+	// internal game clock used by every sprite/tile that needs a clock
     public static long clock = System.currentTimeMillis();
 
     // when extra life will be spawned

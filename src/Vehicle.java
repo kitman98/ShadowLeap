@@ -17,11 +17,6 @@ public abstract class Vehicle extends Sprite {
 
 
     public void render() {
-        if (hasTag(Sprite.SUBMERGES) && this instanceof Turtle) {
-            if (((Boolean)((Turtle) this).getState()).equals(true)) {
-                return;
-            }
-        }
 
         getImage().getFlippedCopy(!moveRight, false).drawCentered(getX(), getY());
     }
