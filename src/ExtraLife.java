@@ -1,5 +1,10 @@
 import org.newdawn.slick.Input;
 
+/**
+ * This class represents a pickup-able extra life item. If the player comes into contact with it, the ExtraLife
+ * disappears and the player gains a life. ExtraLife can also move on the log it is assigned to.
+ */
+
 public class ExtraLife extends Sprite {
 
     private Vehicle log;
@@ -14,6 +19,10 @@ public class ExtraLife extends Sprite {
 
     private static long MOVE_CLOCK = World.clock + MOVE_DELAY;
 
+    /**
+     * Constructor for the Log class.
+     * @param log   The log that the ExtraLife object will spawn on, chosen by WorldReader class
+     */
     public ExtraLife(Vehicle log) {
         super(ASSET_PATH, log.getX(), log.getY(), new String[] {Sprite.PICKUP});
         this.log = log;

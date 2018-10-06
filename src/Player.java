@@ -2,7 +2,10 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
-
+/**
+ * This class represents a player. Player object is controlled by player (Surprising)
+ * Player class controls the interactions between Player and Sprites that Player collides with.
+ */
 public class Player extends Sprite {
 	private static final String ASSET_PATH = "assets/frog.png";
 
@@ -30,6 +33,11 @@ public class Player extends Sprite {
     private static final long delay = 333;
     private static long nextReset = World.clock + delay;
 
+    /**
+     * Constructor for the Player class
+     * @param x X coordinate of the Player
+     * @param y Y coordinate of the Player
+     */
     public Player(float x, float y) {
 		super(ASSET_PATH, x, y);
 	}
@@ -92,7 +100,11 @@ public class Player extends Sprite {
         }
     }
 
-    // decides what happens to frog when it collides or intersects with any other sprite
+    /**
+     * Decides what to do if the Player collides with another Sprite
+     * @param other     Sprite that Player is tested against
+     * @param delta     Delta used in Slick's GameClass
+     */
 	@Override
 	public void onCollision(Sprite other, int delta) {
 
@@ -184,37 +196,37 @@ public class Player extends Sprite {
 	}
 
 	// reset player position
-	public void resetPlayer() {
+	private void resetPlayer() {
 	    setX(App.SCREEN_WIDTH / 2);
 	    setY( App.SCREEN_HEIGHT - World.TILE_SIZE);
     }
 
     // increase number of lives player has remaining
-    public static void increaseLives() {
+    private static void increaseLives() {
         PLAYER_LIVES++;
     }
 
     // reduces number of lives player has left and checks if player has no lives left
-    public static void reduceLives() {
+    private static void reduceLives() {
         PLAYER_LIVES--;
 
         checkLives();
     }
 
     // returns number of lives left
-    public static int livesLeft() {
+    private static int livesLeft() {
         return PLAYER_LIVES;
     }
 
     // if player has no lives left, exit
-    public static void checkLives() {
+    private static void checkLives() {
         if (livesLeft() < 1) {
             System.exit(0);
         }
     }
 
     // checks if player moves into solid sprite and adjusts player position if player hits a solid sprite
-    public void solidHit(Sprite other) {
+    private void solidHit(Sprite other) {
 
         nextReset = World.clock + delay;
 

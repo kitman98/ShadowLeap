@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Main class used to manage all the Sprites generated
+ */
 public class World {
 
 	public static final int TILE_SIZE = 48;
@@ -27,10 +30,15 @@ public class World {
     public static long clock = System.currentTimeMillis();
 
     // when extra life will be spawned
-    public static long lifeSpawnTime;
+    private static long lifeSpawnTime;
     public static long lifeDestroyTime;
-    public static int  lifeLog;
-	
+    private static int  lifeLog;
+
+    /**
+     * Constructor for the World class. Initialises the starting conditions of each level.
+     * @param currentLevel  name of the current level to be generated
+     * @throws IOException  in case there is no .lvl file with the same name as currentLevel
+     */
 	public World(String currentLevel) throws IOException {
 		// create tiles and sprites
 		sprites = WorldReader.readLevel(currentLevel);

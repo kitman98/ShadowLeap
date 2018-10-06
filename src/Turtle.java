@@ -1,5 +1,10 @@
 import org.newdawn.slick.Input;
 
+/**
+ * Class that represents a Vehicle that is sometimes there and other times emotionally distant.
+ * When emotionally distant, Turtle does not provide any support to the Player.
+ * ** Warning ** Emotionally unstable, may turn emotionally distant at any time
+ */
 public class Turtle extends Vehicle {
 
     private static final String ASSET_PATH = "assets/turtles.png";
@@ -14,8 +19,12 @@ public class Turtle extends Vehicle {
     private static long OUTOFWATER_CLOCK = World.clock + TIME_NOT_SUBMERGED;
     private static long SUBMERGED_CLOCK = OUTOFWATER_CLOCK + TIME_SUBMERGED;
 
-
-
+    /**
+     * Constructor for the Turtle class
+     * @param x             X position of the Turtle
+     * @param y             Y position of the Turtle
+     * @param moveRight     Direction of movement of the Turtle
+     */
     public Turtle(float x, float y, boolean moveRight) {
         super(ASSET_PATH, x, y, moveRight, new String[] {Sprite.DRAGS, Sprite.SUBMERGES});
     }
@@ -27,7 +36,7 @@ public class Turtle extends Vehicle {
         }
 
         else {
-
+            // do nothing
         }
     }
 
@@ -54,7 +63,7 @@ public class Turtle extends Vehicle {
         }
     }
 
-    public final void changeState() {
+    private final void changeState() {
         SUBMERGED = !SUBMERGED;
     }
 

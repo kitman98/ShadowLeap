@@ -4,6 +4,9 @@ import org.newdawn.slick.SlickException;
 
 import java.io.IOException;
 
+/**
+ * This class decides what level the player is on, and when to move on to the next level
+ */
 public class GameManager {
 
     private final static int MAX_LEVELS = 1;
@@ -16,7 +19,6 @@ public class GameManager {
     private static World world;
 
     public GameManager() {
-
     }
 
     public void newGame() {

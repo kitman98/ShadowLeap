@@ -5,11 +5,20 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
 
+/**
+ * Class used to read .lvl file and create instances of Sprites. Also feeds event times to World
+ */
 public class WorldReader {
 
     private static Random random = new Random();
 
-    // read .lvl file and generate sprite list
+    /**
+     * Reads .lvl file and creates Sprites
+     * @param currentLevel  filename of level to be generated
+     * @return              ArrayList containing all of the Sprites that are specified in the .lvl file
+     * @throws IOException  if there is no .lvl file in the folder with the filename specified
+     */
+
     public static ArrayList<Sprite> readLevel(String currentLevel) throws IOException {
 
         ArrayList<Sprite> spriteList = new ArrayList<>();
@@ -69,7 +78,12 @@ public class WorldReader {
         return spriteList;
     }
 
-    // picks a random log from the sprite list for the extra life to spawn on
+    /**
+     * Picks a random Log or LongLog from the list of Sprites and returns the position of the chosen Log or LongLog in
+     * the ArrayList
+     * @param list  ArrayList containing all the generated Sprites
+     * @return      Chosen Log or LongLog position
+     */
     public static int pickRandomLog(ArrayList<Sprite> list) {
 
         Iterator<Sprite> itr = list.iterator();
@@ -90,7 +104,12 @@ public class WorldReader {
         return random.nextInt(logs);
     }
 
-    // returns a shallow copy of the log that the extraLife will spawn on
+    /**
+     * Returns a shallow copy of the chosen vehicle
+     * @param list              ArrayList to pick Vehicle out of
+     * @param chosenLogNumber   Log or LongLog position in the list of Logs and longLogs
+     * @return                  shallow copy of chosen Log or LongLog
+     */
     public static Vehicle returnChosenLog(ArrayList<Sprite> list, int chosenLogNumber) {
         int n = 0;
         Vehicle spriteReturn = null;

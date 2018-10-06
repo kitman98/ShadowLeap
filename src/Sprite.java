@@ -3,6 +3,9 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 
+/**
+ * Abstract class that contains the basic building blocks of everything in the game
+ */
 public abstract class Sprite {
 	// this is a defined constant to avoid typos
 	public final static String HAZARD = "hazard";
@@ -19,10 +22,24 @@ public abstract class Sprite {
 	private float y;
 	
 	private String[] tags;
-	
+
+	/**
+	 * Constructor for a Sprite that does not have a tag
+	 * @param imageSrc	Image that will be rendered
+	 * @param x			X position of the Sprite
+	 * @param y			Y position of the Sprite
+	 */
 	public Sprite(String imageSrc, float x, float y) {
 		setupSprite(imageSrc, x, y);
 	}
+
+	/**
+	 * Constructor for a Sprite that has a tag(s)
+	 * @param imageSrc	Image that will be rendered
+	 * @param x			X position of the Sprite
+	 * @param y			Y position of the Sprite
+	 * @param tags		Predefined tags that define how Sprites interact with each other
+	 */
 	public Sprite(String imageSrc, float x, float y, String[] tags) {
 		setupSprite(imageSrc, x, y);
 		this.tags = tags;
@@ -65,19 +82,32 @@ public abstract class Sprite {
 	 */
 	public final float getY() { return y; }
 
-	// adds tags to a tagless class
-	public final void addTag(String[] tags) {this.tags = tags; }
-	
+	/**
+	 * Moves the Sprite by increasing the X and Y position of the Player
+	 * @param dx	increment in x
+	 * @param dy	increment in y
+	 */
 	public final void move(float dx, float dy) {
 		setX(x + dx);
 		setY(y + dy);
 	}
-	
+
+	/**
+	 * Checks if the Sprite is on the screen
+	 * @param x		Current x position of the Sprite
+	 * @param y		Current y position of the Sprite
+	 * @return		true if Sprite is in the screen, and returns false if otherwise
+	 */
 	public final boolean onScreen(float x, float y) {
-		return !(x + World.TILE_SIZE / 2 > App.SCREEN_WIDTH || x - World.TILE_SIZE / 2 < 0
-			 || y + World.TILE_SIZE / 2 > App.SCREEN_HEIGHT || y - World.TILE_SIZE / 2 < 0);
+		return !(x > App.SCREEN_WIDTH + getImage().getWidth() || x < -getImage().getWidth()
+				|| y > App.SCREEN_HEIGHT + World.TILE_SIZE / 2 || y < -World.TILE_SIZE / 2);
 	}
 
+	/**
+	 * Uses BoundingBoxes to check if a Sprite collides with another
+	 * @param other	other Sprite to check
+	 * @return		true if the Sprites collide, false otherwise
+	 */
 	public final boolean collides(Sprite other) {
 		return bounds.intersects(other.bounds);
 	}
