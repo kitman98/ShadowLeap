@@ -26,8 +26,8 @@ public class App extends BasicGame {
     @Override
     public void init(GameContainer gc) throws SlickException {
 
-        Music music = new Music("giveh1pls");
-        music.loop();
+        Music music = new Music("assets/giveh1pls.wav");
+        music.play();
 
         gameManager = new GameManager();
         gameManager.newGame();
