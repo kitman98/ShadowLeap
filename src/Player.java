@@ -5,6 +5,9 @@ import org.newdawn.slick.SlickException;
 /**
  * This class represents a player. Player object is controlled by player (Surprising)
  * Player class controls the interactions between Player and Sprites that Player collides with.
+ *
+ * <IMG SRC ="doc-files/sadpepe.png">
+ * <h1>Get me out </h1>
  */
 public class Player extends Sprite {
 	private static final String ASSET_PATH = "assets/frog.png";

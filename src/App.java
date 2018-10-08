@@ -1,7 +1,4 @@
-/**
- * Sample Project for SWEN20003: Object Oriented Software Development 2018
- * by Eleanor McMurtry, University of Melbourne
- */
+
 
 import org.newdawn.slick.*;
 
@@ -21,6 +18,7 @@ public class App extends BasicGame {
     public static final int SCREEN_HEIGHT = 768;
 
     private GameManager gameManager;
+    public static Music music;
 
     public App() {
         super("Shadow Leap");
@@ -28,8 +26,17 @@ public class App extends BasicGame {
 
     @Override
     public void init(GameContainer gc) {
+
+        /*try {
+            music = new Music("assets/plsh1.ogg");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+
         gameManager = new GameManager();
         gameManager.newGame();
+
+
     }
 
     /** Update the game state for a frame.

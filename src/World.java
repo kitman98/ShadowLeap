@@ -40,6 +40,7 @@ public class World {
      * @throws IOException  in case there is no .lvl file with the same name as currentLevel
      */
 	public World(String currentLevel) throws IOException {
+
 		// create tiles and sprites
 		sprites = WorldReader.readLevel(currentLevel);
 
