@@ -1,6 +1,7 @@
 import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.Sound;
 
 /**
  * This class represents a player. Player object is controlled by player (Surprising)
@@ -36,6 +37,16 @@ public class Player extends Sprite {
     private static final long delay = 333;
     private static long nextReset = World.clock + delay;
 
+    static Sound deathsound;
+
+    {
+        try {
+            deathsound = new Sound("assets/deathsound.wav");
+        } catch (SlickException e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * Constructor for the Player class
      * @param x X coordinate of the Player
@@ -43,6 +54,8 @@ public class Player extends Sprite {
      */
     public Player(float x, float y) {
 		super(ASSET_PATH, x, y);
+
+
 	}
 
 	// read user input and change player position based on input
@@ -153,6 +166,7 @@ public class Player extends Sprite {
 		if (other.hasTag(Sprite.HAZARD) && !safeState) {
             reduceLives();
             resetPlayer();
+
 		}
 
 		if (other.hasTag(Sprite.SOLID)) {
@@ -212,6 +226,7 @@ public class Player extends Sprite {
     // reduces number of lives player has left and checks if player has no lives left
     private static void reduceLives() {
         PLAYER_LIVES--;
+        deathsound.play(1,10);
 
         checkLives();
     }
