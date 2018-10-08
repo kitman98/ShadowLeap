@@ -18,20 +18,16 @@ public class App extends BasicGame {
     public static final int SCREEN_HEIGHT = 768;
 
     private GameManager gameManager;
-    public static Music music;
 
     public App() {
         super("Shadow Leap");
     }
 
     @Override
-    public void init(GameContainer gc) {
+    public void init(GameContainer gc) throws SlickException {
 
-        /*try {
-            music = new Music("assets/plsh1.ogg");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
+        Music music = new Music("giveh1pls");
+        music.loop();
 
         gameManager = new GameManager();
         gameManager.newGame();
