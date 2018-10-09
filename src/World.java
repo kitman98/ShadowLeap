@@ -30,9 +30,13 @@ public class World {
     public static long clock = System.currentTimeMillis();
 
     // when extra life will be spawned
+    private static int lifeStart = 11;
+    private static int lifeInterval = 25;
     private static long lifeSpawnTime;
     public static long lifeDestroyTime;
     private static int  lifeLog;
+
+    private static int songPos;
 
     /**
      * Constructor for the World class. Initialises the starting conditions of each level.
@@ -59,15 +63,23 @@ public class World {
         holesReached = 0;
 
         // set timers for extra life
-        lifeSpawnTime = clock + WorldReader.randomTime();
+        lifeSpawnTime = clock + WorldReader.randomTime(lifeStart, lifeInterval);
         lifeDestroyTime = lifeSpawnTime + ExtraLife.DESPAWN_DELAY;
         lifeLog = WorldReader.pickRandomLog(sprites);
         livesGenerated = 0;
+
+        // song
+        songPos = Integer.parseInt(currentLevel.substring(14,15))%App.songs.length;
+
 
     }
 
     // updates each sprite in the sprite list
 	public void update(Input input, int delta) {
+
+	    if (!App.songs[songPos].playing()) {
+	        App.songs[songPos].play(1,0.25f);
+        }
 
 	    clock = System.currentTimeMillis();
 
@@ -82,7 +94,7 @@ public class World {
         if (clock >= lifeDestroyTime && livesGenerated == 1) {
 	        sprites.remove(sprites.size() - 1);
 	        livesGenerated--;
-			lifeSpawnTime = clock + WorldReader.randomTime();
+			lifeSpawnTime = clock + WorldReader.randomTime(lifeStart,lifeInterval);
         }
 
 		// loop over sprite list and updates each sprite

@@ -1,13 +1,14 @@
 import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.Sound;
 
 /**
  * This class represents a player. Player object is controlled by player (Surprising)
  * Player class controls the interactions between Player and Sprites that Player collides with.
  *
  * <IMG SRC ="doc-files/sadpepe.png">
- * <h1>Get me out </h1>
+ * <header><font size = "20", color = "red">Get me out </font> </header>
  */
 public class Player extends Sprite {
 	private static final String ASSET_PATH = "assets/frog.png";
@@ -35,6 +36,17 @@ public class Player extends Sprite {
     // timer for delay when echo is set to null
     private static final long delay = 333;
     private static long nextReset = World.clock + delay;
+
+    static Sound deathsound;
+
+    static {
+        try {
+            deathsound = new Sound("assets/deathsound.wav");
+        } catch (SlickException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     /**
      * Constructor for the Player class
@@ -85,6 +97,12 @@ public class Player extends Sprite {
 		if (World.clock >= nextReset) {
 		    echo = NULL;
 		    nextReset = World.clock + delay;
+        }
+
+        // if player is pushed off the map
+        if (getX() + getImage().getWidth() < 0 || getX() > App.SCREEN_WIDTH || getY() > App.SCREEN_HEIGHT) {
+            reduceLives();
+            resetPlayer();
         }
 
 
@@ -190,12 +208,6 @@ public class Player extends Sprite {
 		if (other.hasTag(Sprite.PUSHES) && other instanceof Bulldozer) {
 			move( other.getSpeed() * (((Vehicle) other).getMoveRight()? 1: -1) * delta, 0);
 		}
-
-		// if player is pushed off the map
-        if (getX() + getImage().getWidth() < 0 || getX() > App.SCREEN_WIDTH || getY() > App.SCREEN_HEIGHT) {
-            reduceLives();
-            resetPlayer();
-        }
 	}
 
 	// reset player position
@@ -209,9 +221,11 @@ public class Player extends Sprite {
         PLAYER_LIVES++;
     }
 
-    // reduces number of lives player has left and checks if player has no lives left
+    // reduces number o f lives player has left and checks if player has no lives left
     private static void reduceLives() {
-        PLAYER_LIVES--;
+        deathsound.play(1, 10);
+
+	    PLAYER_LIVES--;
 
         checkLives();
     }
