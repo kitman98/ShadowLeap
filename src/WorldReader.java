@@ -128,13 +128,8 @@ public class WorldReader {
     }
 
     // picks a random time for the extraLife to spawn
-    public static long randomTime(int start,int interval) {
-        return (random.nextInt(start) + interval)*1000;
-    }
-
-    // picks a random position for Lamp
-    public static float randomPosition(int maxPosition) {
-        return (random.nextInt(maxPosition) - World.TILE_SIZE);
+    public static long randomTime() {
+        return (random.nextInt(11) + 25)*1000;
     }
 
 }

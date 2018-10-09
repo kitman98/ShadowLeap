@@ -41,7 +41,7 @@ public class Player extends Sprite {
 
     static {
         try {
-            deathsound = new Sound("assets/deathsound.wav");
+            deathsound = new Sound("assets/deathsound2.wav");
         } catch (SlickException e) {
             e.printStackTrace();
         }

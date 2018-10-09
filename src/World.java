@@ -63,7 +63,7 @@ public class World {
         holesReached = 0;
 
         // set timers for extra life
-        lifeSpawnTime = clock + WorldReader.randomTime(lifeStart, lifeInterval);
+        lifeSpawnTime = clock + WorldReader.randomTime();
         lifeDestroyTime = lifeSpawnTime + ExtraLife.DESPAWN_DELAY;
         lifeLog = WorldReader.pickRandomLog(sprites);
         livesGenerated = 0;
@@ -94,7 +94,7 @@ public class World {
         if (clock >= lifeDestroyTime && livesGenerated == 1) {
 	        sprites.remove(sprites.size() - 1);
 	        livesGenerated--;
-			lifeSpawnTime = clock + WorldReader.randomTime(lifeStart,lifeInterval);
+			lifeSpawnTime = clock + WorldReader.randomTime();
         }
 
 		// loop over sprite list and updates each sprite
