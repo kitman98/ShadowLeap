@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class GameManager {
 
-    private final static int MAX_LEVELS = 1;
+    private final static int MAX_LEVELS = 2;
 
     private final static String levelDirectory = "assets/levels/";
     private final static String levelSuffix = ".lvl";

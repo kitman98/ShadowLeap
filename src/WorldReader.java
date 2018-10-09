@@ -72,6 +72,10 @@ public class WorldReader {
                     case "bike":
                         spriteList.add(new Bike(Float.parseFloat(line[1]), Float.parseFloat(line[2]), Boolean.parseBoolean(line[3])));
                         break;
+
+                    case "moth":
+                        spriteList.add(new Lamp(randomPosition(App.SCREEN_WIDTH), randomPosition(App.SCREEN_HEIGHT)));
+                        spriteList.add(new Moth(Float.parseFloat(line[1]), Float.parseFloat(line[2]), spriteList.get(spriteList.size() - 1).getX(), spriteList.get(spriteList.size() - 1).getY()));
                 }
             }
         }
