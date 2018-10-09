@@ -39,15 +39,24 @@ public class Player extends Sprite {
 
     static Sound deathsound;
 
+<<<<<<< HEAD
     static {
         try {
             deathsound = new Sound("assets/deathsound2.wav");
+=======
+    {
+        try {
+            deathsound = new Sound("assets/deathsound.wav");
+>>>>>>> e0035fc61b7d3abec179aaacde735ee1b86369bf
         } catch (SlickException e) {
             e.printStackTrace();
         }
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e0035fc61b7d3abec179aaacde735ee1b86369bf
     /**
      * Constructor for the Player class
      * @param x X coordinate of the Player
@@ -55,6 +64,8 @@ public class Player extends Sprite {
      */
     public Player(float x, float y) {
 		super(ASSET_PATH, x, y);
+
+
 	}
 
 	// read user input and change player position based on input
@@ -171,6 +182,7 @@ public class Player extends Sprite {
 		if (other.hasTag(Sprite.HAZARD) && !safeState) {
             reduceLives();
             resetPlayer();
+
 		}
 
 		if (other.hasTag(Sprite.SOLID)) {
@@ -223,9 +235,14 @@ public class Player extends Sprite {
 
     // reduces number o f lives player has left and checks if player has no lives left
     private static void reduceLives() {
+<<<<<<< HEAD
         deathsound.play(1, 10);
 
 	    PLAYER_LIVES--;
+=======
+        PLAYER_LIVES--;
+        deathsound.play(1,10);
+>>>>>>> e0035fc61b7d3abec179aaacde735ee1b86369bf
 
         checkLives();
     }
