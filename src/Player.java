@@ -38,10 +38,14 @@ public class Player extends Sprite {
     private static long nextReset = World.clock + delay;
 
     static Sound deathsound;
+    static Sound screech;
+    static Sound holereached;
 
     static {
         try {
             deathsound = new Sound("assets/deathsound.wav");
+            screech = new Sound("assets/screech.wav");
+            holereached = new Sound("assets/holefilled.wav");
         } catch (SlickException e) {
             e.printStackTrace();
         }
@@ -168,9 +172,22 @@ public class Player extends Sprite {
         }
 
         // kills player if player touches a hazard and is not on a log,longlog or turtle
-		if (other.hasTag(Sprite.HAZARD) && !safeState) {
-            reduceLives();
-            resetPlayer();
+		if (other.hasTag(Sprite.HAZARD)) {
+
+            if(other instanceof Moth) {
+                reduceLives();
+                resetPlayer();
+                ((Moth)other).changePosition();
+            }
+
+            else if (!safeState) {
+                if (other instanceof Vehicle) {
+                    screech.play();
+                }
+
+                reduceLives();
+                resetPlayer();
+            }
 		}
 
 		if (other.hasTag(Sprite.SOLID)) {
@@ -187,6 +204,7 @@ public class Player extends Sprite {
 
             // else hole is filled
             else {
+                holereached.play();
                 ((Hole) other).playerReaches();
                 World.reachedHole();
             }

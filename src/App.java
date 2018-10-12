@@ -19,6 +19,7 @@ public class App extends BasicGame {
 
     private GameManager gameManager;
 
+    /*
     public static Music[] songs;
 
     {
@@ -28,6 +29,8 @@ public class App extends BasicGame {
             e.printStackTrace();
         }
     }
+
+    */
 
 
     public App() {

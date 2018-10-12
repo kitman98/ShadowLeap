@@ -69,7 +69,7 @@ public class World {
         livesGenerated = 0;
 
         // song
-        songPos = Integer.parseInt(currentLevel.substring(14,15))%App.songs.length;
+        //songPos = Integer.parseInt(currentLevel.substring(14,15))%App.songs.length;
 
 
     }
@@ -77,9 +77,9 @@ public class World {
     // updates each sprite in the sprite list
 	public void update(Input input, int delta) {
 
-	    if (!App.songs[songPos].playing()) {
+	    /*if (!App.songs[songPos].playing()) {
 	        App.songs[songPos].play(1,0.25f);
-        }
+        }*/
 
 	    clock = System.currentTimeMillis();
 

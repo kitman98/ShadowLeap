@@ -70,5 +70,9 @@ public class Moth extends Vehicle {
         return this.yPosLamp;
     }
 
+    public void changePosition() {
+        setX(WorldReader.randomPosition(App.SCREEN_WIDTH));
+        setY(WorldReader.randomPosition(App.SCREEN_HEIGHT));
+    }
 
 }
