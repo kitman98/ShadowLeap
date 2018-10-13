@@ -36,8 +36,6 @@ public class World {
     public static long lifeDestroyTime;
     private static int  lifeLog;
 
-    private static int songPos;
-
     /**
      * Constructor for the World class. Initialises the starting conditions of each level.
      * @param currentLevel  name of the current level to be generated
@@ -68,18 +66,12 @@ public class World {
         lifeLog = WorldReader.pickRandomLog(sprites);
         livesGenerated = 0;
 
-        // song
-        //songPos = Integer.parseInt(currentLevel.substring(14,15))%App.songs.length;
-
 
     }
 
     // updates each sprite in the sprite list
 	public void update(Input input, int delta) {
 
-	    /*if (!App.songs[songPos].playing()) {
-	        App.songs[songPos].play(1,0.25f);
-        }*/
 
 	    clock = System.currentTimeMillis();
 

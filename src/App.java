@@ -19,20 +19,6 @@ public class App extends BasicGame {
 
     private GameManager gameManager;
 
-    /*
-    public static Music[] songs;
-
-    {
-        try {
-            songs = new Music[] {new Music("assets/giveh1pls.wav"), new Music("assets/ineedh1s.wav")};
-        } catch (SlickException e) {
-            e.printStackTrace();
-        }
-    }
-
-    */
-
-
     public App() {
         super("Shadow Leap");
     }
