@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f09e61ab-f1d6-4686-8663-355c4c37970c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/giveh1pls.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/hole.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ineedh1s.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
-    </list>
+    <list default="true" id="f09e61ab-f1d6-4686-8663-355c4c37970c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -382,12 +376,12 @@
       <workItem from="1538269217150" duration="2451000" />
       <workItem from="1538562452769" duration="24373000" />
       <workItem from="1538996008881" duration="1749000" />
-      <workItem from="1539072634203" duration="6753000" />
+      <workItem from="1539072634203" duration="7430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133828000" />
+    <option name="totallyTimeSpent" value="134505000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,7 +406,7 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4986979" visible="true" weight="0.32831737" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4986979" weight="0.32831737" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
